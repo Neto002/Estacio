@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+@SuppressWarnings("unused")
 public class Aula { //Classe Instanciadora
 
 	public static void main(String[] args) {
@@ -35,6 +36,7 @@ public class Aula { //Classe Instanciadora
 		
 		JOptionPane.showInternalMessageDialog(null, "Nome do aluno: " + alunoA.getNomeAluno() + 
 											  "\nMatrícula do aluno: " + alunoA.getMatriculaAluno(), "Informações", JOptionPane.INFORMATION_MESSAGE, null);
+		
 		
 	}
 	
