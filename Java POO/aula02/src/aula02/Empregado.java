@@ -2,18 +2,18 @@ package aula02;
 
 public class Empregado {
 
-	private String matricula;
+	private Long matricula;
 	private String nome;
 	
 	Empregado() {
 		
 	}
 
-	public String getMatricula() {
+	public Long getMatricula() {
 		return matricula;
 	}
 
-	public void setMatricula(String matricula) {
+	public void setMatricula(Long matricula) {
 		this.matricula = matricula;
 	}
 

@@ -8,14 +8,18 @@ public class Aula {
 
 		Tecnico tecnico = new Tecnico();
 		
-		tecnico.setMatricula(String.valueOf(JOptionPane.showInputDialog(null, "Digite a matrícula: ", "Informe os dados: ", JOptionPane.INFORMATION_MESSAGE, null, null, null)));
-		tecnico.setNome(String.valueOf(JOptionPane.showInputDialog(null, "Digite o nome: ", "Informe os dados: ", JOptionPane.INFORMATION_MESSAGE, null, null, null)));
-		tecnico.setTitulo(String.valueOf(JOptionPane.showInputDialog(null, "Digite o titulo: ", "Informe os dados: ", JOptionPane.INFORMATION_MESSAGE, null, null, null)));
+		tecnico.setMatricula(Long.parseLong(JOptionPane.showInputDialog(null, "Digite a matrícula: ", "Informe os dados: ", JOptionPane.INFORMATION_MESSAGE)));
+		tecnico.setNome(JOptionPane.showInputDialog(null, "Digite o nome: ", "Informe os dados: ", JOptionPane.INFORMATION_MESSAGE));
+		tecnico.setTitulo(JOptionPane.showInputDialog(null, "Digite o titulo: ", "Informe os dados: ", JOptionPane.INFORMATION_MESSAGE));
 		
-		JOptionPane.showMessageDialog(null, "Matrícula: " + tecnico.getMatricula() +
-											"\nNome: " + tecnico.getNome() +
-											"\nTítulo: " + tecnico.getTitulo(), "DADOS DO TÉCNICO", JOptionPane.INFORMATION_MESSAGE, null);
+		mostraTecnico(tecnico.getMatricula(), tecnico.getNome(), tecnico.getTitulo());
 		
+	}
+	
+	public static void mostraTecnico(Long m, String n, String t) {
+		JOptionPane.showMessageDialog(null, "Matrícula: " + m +
+				"\nNome: " + n +
+				"\nTítulo: " + t, "DADOS DO TÉCNICO", JOptionPane.INFORMATION_MESSAGE, null);
 	}
 
 }
