@@ -31,8 +31,10 @@ media = (nota[0] + nota[1] + nota[2]) / 3
 
 print(f'Sua média final é: {media:.2f}')
 
-if (media >= 6):
+if (media >= 7):
     print('APROVADO')
+elif (media < 7 and media >=4):
+    print('RECUPERAÇÃO')
 else:
     print('REPROVADO')
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
