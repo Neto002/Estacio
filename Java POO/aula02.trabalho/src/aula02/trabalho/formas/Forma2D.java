@@ -11,7 +11,7 @@ public class Forma2D { //SuperClasse
 		
 	}
 	
-	//---------------------------------Sobrecarga de Métodos-------------------------------------------------//
+	//---------------------------------------Sobrecarga de Métodos-------------------------------------------//
 	public void area() {
 		double area = this.getDimensao1() * this.getDimensao2();
 		JOptionPane.showMessageDialog(null, "Área da forma 2d: " + area, "Área", JOptionPane.PLAIN_MESSAGE);
