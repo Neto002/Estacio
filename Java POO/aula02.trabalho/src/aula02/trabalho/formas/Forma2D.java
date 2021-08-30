@@ -25,7 +25,7 @@ public class Forma2D { //SuperClasse
 	
 	public void mostraDados() {
 		JOptionPane.showMessageDialog(null, "Primeira dimensão: " + this.getDimensao1() + "\nSegunda dimensão: " + 
-									  this.getDimensao2(), "DADOS DA SUPERCLASSE", JOptionPane.PLAIN_MESSAGE);
+									  this.getDimensao2(), "DADOS DA SUPERCLASSE - GRUPO 1", JOptionPane.PLAIN_MESSAGE);
 	}
 
 	public Double getDimensao1() {
