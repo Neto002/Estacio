@@ -1,0 +1,17 @@
+                30/08
+                
+Redação sobre Modelos de Serviço
+
+    Existem diversos modelos de serviços na Cloud Computing, cada qual referindo-se à plataforma, propósito, e outros
+fatores. Dentre eles, podemos citar: Software as a Service (são as próprias aplicações sendo executadas no navegador
+sendo oferecidas como o serviço, como por exemplo serviços de streaming como Netflix e PrimeVideo); Platform as a
+Service (o serviço oferecido é o ambiente no qual as aplicações serão desenvolvidas, como o Windows Azure); e
+Infrastructure as a Service (serviço oferecido é toda a infraestrutura necessária para desenvolver as aplicações,
+como capacidade de processamento, através de máquinas virtuais; um bom exemplo desse modelo de serviço é o Amazon
+Web Services).
+    A relação entre esses três modelos de serviço se dá primeiramente pelo provedor fornecendo-os. A partir disso, a
+infraestrutura é necessária para começar o desenvolvimento, já que se trata de poder de processamento, capacidade de memória, software, entre outros recursos. Depois de se obter os recursos necessários, uma plataforma precisa ser
+escolhida para hospedar o aplicativo, que por sua vez é capaz de fornecer os recursos que viabilizam o desenvolvimento
+do software em si, que será comercializado e ofertado ao cliente.
+    Com o avanço da tecnologia, diversos outros modelos de serviço surgiram, como o Runtime as a Service, Desktop as a
+Service, etc.
