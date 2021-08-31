@@ -1,0 +1,12 @@
+31/08                                                                      
+                                      Conceitos
+                                   
+Modelar: criar um modelo que explique as características de funcionamento e comportamento de um software a partir do qual ele será criado, facilitando seu entendimento e seu projeto, através das características principais que evitarão erros de programação, projetos e funcionamento.
+
+Normalização: processo realizado para eliminar redundância de informações.
+
+Modelagem Conceitual: usada como representação de alto nível e considera exclusivamente o ponto de vista do usuário do criador de dados; Demonstra todas as relações entre as entidades, suas especializações, seus atributos e auto-relações.
+
+Auto-Relação: a entidade se relaciona com ela mesma, dependendo de seus registros.
+
+Chave: valores atribuídos não podem se repetir, objetivo de identificar os registros uma vez.
