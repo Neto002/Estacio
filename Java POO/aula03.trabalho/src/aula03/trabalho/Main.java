@@ -1,18 +1,15 @@
 package aula03.trabalho;
 
-import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 import javax.swing.JOptionPane;
 
-@SuppressWarnings("unused")
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Set<Notas> blocoNotas = new HashSet<>();
+		List<Notas> blocoNotas = new LinkedList<>();
 		
 		int quantidadeNotas = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantas notas deseja adicionar?", "Implementação de Listas - GRUPO 1", 
 				JOptionPane.PLAIN_MESSAGE));
@@ -28,6 +25,7 @@ public class Main {
 		}
 		
 		JOptionPane.showMessageDialog(null, "Bloco de Notas:\n" + blocoNotas, "Exibição Bloco de Notas - GRUPO 1", JOptionPane.PLAIN_MESSAGE);
+		
 		
 	}
 
