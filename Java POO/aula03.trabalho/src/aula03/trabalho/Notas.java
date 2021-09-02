@@ -1,6 +1,6 @@
 package aula03.trabalho;
 
-public class Notas {
+public class Notas implements Comparable<Notas> {
 
 	private String nome;
 	private String dataCriacao;
@@ -10,6 +10,10 @@ public class Notas {
 		this.setNome(nome);
 		this.setDataCriacao(data);
 		this.setInformacao(info);
+	}
+	
+	Notas(String nome) {
+		this.setNome(nome);
 	}
 	
 	Notas() {
@@ -43,6 +47,12 @@ public class Notas {
 	@Override
 	public String toString() {
 		return "Nome: " + this.getNome() + ", Data de criação: " + this.getDataCriacao() + ", Informação: " + this.getInformacao();
+	}
+
+	@Override
+	public int compareTo(Notas nota) {
+		// TODO Auto-generated method stub
+		return this.getNome().compareToIgnoreCase(nota.getNome());
 	}
 	
 	
