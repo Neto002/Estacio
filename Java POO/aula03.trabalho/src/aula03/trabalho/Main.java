@@ -1,25 +1,18 @@
 package aula03.trabalho;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.swing.JOptionPane;
 
+@SuppressWarnings("unused")
 public class Main {
 
 	public static void main(String[] args) {
-
-		/*//Criação da Lista
-		List<Notas> blocoDeNotas = new ArrayList<>();
 		
-		//Inclusão das Notas à Lista
-		blocoDeNotas.add(new Notas("Antonio Neto", "01/09/2021", "Hello World"));
-		blocoDeNotas.add(new Notas("João Silva", "05/12/2019", "Oi"));
-		
-		//Exibição da Lista
-		System.out.println(blocoDeNotas);*/
-		
-		List<Notas> blocoNotas = new ArrayList<>();
+		Set<Notas> blocoNotas = new HashSet<>();
 		
 		int quantidadeNotas = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantas notas deseja adicionar?", "Implementação de Listas - GRUPO 1", 
 				JOptionPane.PLAIN_MESSAGE));
@@ -34,7 +27,7 @@ public class Main {
 			blocoNotas.add(notas[c]);
 		}
 		
-		JOptionPane.showMessageDialog(null, "Bloco de Notas:\n" + blocoNotas + "\n", "Exibição Bloco de Notas - GRUPO 1", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Bloco de Notas:\n" + blocoNotas, "Exibição Bloco de Notas - GRUPO 1", JOptionPane.PLAIN_MESSAGE);
 		
 	}
 
