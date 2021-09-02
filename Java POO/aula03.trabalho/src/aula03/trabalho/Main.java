@@ -2,8 +2,6 @@ package aula03.trabalho;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -14,14 +12,7 @@ public class Main {
 		
 		List<Notas> blocoNotas = new ArrayList<>();
 		
-		blocoNotas.add(new Notas("b"));
-		blocoNotas.add(new Notas("z"));
-		blocoNotas.add(new Notas("a"));
-		
-		Collections.sort(blocoNotas);
-		System.out.println(blocoNotas);
-		
-		/*int quantidadeNotas = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantas notas deseja adicionar?", "Implementação de Listas - GRUPO 1", 
+		int quantidadeNotas = Integer.parseInt(JOptionPane.showInputDialog(null, "Quantas notas deseja adicionar?", "Implementação de Listas - GRUPO 1", 
 				JOptionPane.PLAIN_MESSAGE));
 		
 		Notas[] notas = new Notas[quantidadeNotas];
@@ -34,7 +25,8 @@ public class Main {
 			blocoNotas.add(notas[c]);
 		}
 		
-		JOptionPane.showMessageDialog(null, "Bloco de Notas:\n" + blocoNotas, "Exibição Bloco de Notas - GRUPO 1", JOptionPane.PLAIN_MESSAGE);*/
+		Collections.sort(blocoNotas);
+		JOptionPane.showMessageDialog(null, "Bloco de Notas:\n" + blocoNotas, "Exibição Bloco de Notas - GRUPO 1", JOptionPane.PLAIN_MESSAGE);
 		
 		
 	}
