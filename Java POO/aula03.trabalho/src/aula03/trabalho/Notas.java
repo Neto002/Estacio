@@ -46,7 +46,7 @@ public class Notas implements Comparable<Notas> {
 
 	@Override
 	public String toString() {
-		return "Nome: " + this.getNome() + ", Data de criação: " + this.getDataCriacao() + ", Informação: " + this.getInformacao();
+		return "\n(Nome: " + this.getNome() + ", Data de criação: " + this.getDataCriacao() + ", Informação: " + this.getInformacao() + ")";
 	}
 
 	@Override
