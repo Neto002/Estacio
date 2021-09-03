@@ -85,5 +85,10 @@ for c in range(num, 0, -1):
     f *= c
 print(f'{f}')
 
-#Exercício 3: 
+#Exercício 3: exibir a soma de todos os numeros entre 1 e 50
 
+soma = 0
+for c in range(1, 51):
+    print(f'{c} ', end='')
+    soma += c
+print(f'\nA soma entre os números é: {soma}')
