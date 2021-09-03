@@ -1,4 +1,4 @@
-'''#Exercício 1: informar se o numero informado é par ou ímpar
+#Exercício 1: informar se o numero informado é par ou ímpar
 
 num = int(input('Digite um número: '))
 if num % 2 == 0:
@@ -31,7 +31,7 @@ if idade >= 18:
 elif idade < 18:
     print(f'Idade: {idade} (MENOR DE IDADE)')
 else:
-    print('Digite uma idade válida')'''
+    print('Digite uma idade válida')
 
 #Exercício 4 e 5: ler 3 numeros inteiros e dizer qual o maior e imprimi-los em ordem crescente
 
@@ -52,5 +52,38 @@ for c in range(3):
     
     if num > menor and num < maior:
         meio = num
+
 print(f'O maior número digitado foi {maior}')
 print(f'Imprimindo os três em ordem crescente: {menor}, {meio}, {maior}')
+
+#Exercícios para a próxima aula
+
+#Exercicio 1: pedir dois numeros e imprimir a sequencia entre eles
+
+n1 = int(input('Digite o primeiro numero: '))
+n2 = int(input('Digite o segundo numero: '))
+
+if n2 > n1:
+    for c in range(n1, n2+1):
+        print(c)
+elif n2 < n1:
+    for c in range(n2, n1, -1):
+        print(c)
+elif n2 == n1:
+    print(n1)
+
+#Exercicio 2: fatorial
+
+num = int(input('Digite um numero: '))
+c = num
+f = 1
+
+print(f'{num}! = ', end="")
+for c in range(num, 0, -1):
+    print(f'{c}', end='')
+    print(' x 'if c > 1 else ' = ', end='')
+    f *= c
+print(f'{f}')
+
+#Exercício 3: 
+
