@@ -1,1 +1,18 @@
 https://docs.google.com/document/d/1W_8goqi67gTfiKidL4vfShyM2-OPcrYM/edit?usp=sharing&ouid=117572542405026622027&rtpof=true&sd=true
+
+Aluno: Antonio Gomes Ferreira Neto
+Matrícula: 202102570735
+
+Trabalho valendo 1,5 na AV1
+
+Start-up
+O projeto trata-se de um app voltado para jogadores de jogos estilo RPG, o qual consistirá em uma plataforma de cadastro para os usuários criarem suas contas, e um programa que possibilite a criação de mapas, adição de personagens e objetos no mesmo, edição de fichas para os jogadores e o mestre e um sistema de rolagem de dados.
+
+Para tal, se faz necessário a adoção de KPIs de serviço, satisfação dos clientes e usuários e de infraestrutura.
+
+SLA
+Precisamos de um serviço capaz de comportar todos os acessos previstos para o APP;
+Disponibilidade dos logs para capacidade de encontrar falhas;
+1tb de armazenamento inicial, sujeito a alterações;
+32gb de memória, sujeito a alterações;
+Processador 6-core 3.9GHz.
