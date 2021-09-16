@@ -11,6 +11,7 @@ public class Porta extends Casa {
 	private double largura;
 	private String material;
 
+	//Construtores
 	Porta() {
 		
 	}
@@ -38,6 +39,7 @@ public class Porta extends Casa {
 		this.setMaterial(material);
 	}
 	
+	//Sobrescrita do método de entrada de dados
 	@Override
 	public void entradaDados() {
 		@SuppressWarnings("resource")
@@ -45,7 +47,7 @@ public class Porta extends Casa {
 		
 		System.out.println("=======Entrada de dados para a Porta=======");
 		System.out.println("Digite a cor: ");
-		String cor = teclado.next();
+		String cor = teclado.nextLine();
 		
 		System.out.println("Digite o tamanho: ");
 		double tamanho = teclado.nextDouble();
@@ -68,6 +70,7 @@ public class Porta extends Casa {
 		
 	}
 	
+	//Getters e Setters
 	public double getAltura() {
 		return altura;
 	}
@@ -92,6 +95,7 @@ public class Porta extends Casa {
 		this.material = material;
 	}
 	
+	//Sobrescrita do método toString
 	@Override
 	public String toString() {
 		return "Cor da Porta: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nMaterial: " + this.getMaterial() + "\nAltura: " + this.getAltura() + "\nLargura: " + this.getLargura();

@@ -13,6 +13,7 @@ public class Casa {
 	private Porta porta;
 	private Parede parede;
 	
+	//Construtores
 	Casa() {
 		
 	}
@@ -41,6 +42,7 @@ public class Casa {
 		this.setParede(parede);
 	}
 	
+	//Método para entrada de dados
 	public void entradaDados() {
 		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
@@ -58,6 +60,7 @@ public class Casa {
 		
 	}
 
+	//Getters e Setters
 	public String getCor() {
 		return cor;
 	}
@@ -98,6 +101,7 @@ public class Casa {
 		this.parede = parede;
 	}
 	
+	//Sobrescrita do método toString
 	@Override
 	public String toString() {
 		return "\n====================== Informações da casa ======================\nCor: " + this.getCor() + "\nTamanho: " + this.getTamanho() + 

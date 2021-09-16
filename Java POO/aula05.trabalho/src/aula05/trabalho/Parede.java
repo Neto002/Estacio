@@ -10,6 +10,7 @@ public class Parede extends Casa {
 	private String localizacao;
 	private double altura;
 
+	//Construtores
 	Parede() {
 		
 	}
@@ -33,6 +34,7 @@ public class Parede extends Casa {
 		
 	}
 	
+	//Sobrescrita do método de entrada de dados
 	@Override
 	public void entradaDados() {
 		@SuppressWarnings("resource")
@@ -59,6 +61,7 @@ public class Parede extends Casa {
 		
 	}
 	
+	//Getters e Setters
 	public String getLocalizacao() {
 		return localizacao;
 	}
@@ -75,6 +78,7 @@ public class Parede extends Casa {
 		this.altura = altura;
 	}
 
+	//Sobrescrita do método toString
 	@Override
 	public String toString() {
 		return "Cor da Porta: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nLocalização: " + this.getLocalizacao() + "\nAltura: " + this.getAltura();

@@ -10,6 +10,7 @@ public class Janela extends Casa {
 	private String dimensao;
 	private String material;
 	
+	//Construtores
 	Janela() {
 		
 	}
@@ -32,6 +33,7 @@ public class Janela extends Casa {
 		this.setMaterial(material);
 	}
 	
+	//Sobrescrita do método de entrada de dados
 	@Override
 	public void entradaDados() {
 		@SuppressWarnings("resource")
@@ -58,6 +60,7 @@ public class Janela extends Casa {
 		
 	}
 
+	//Getters e Setters
 	public String getDimensao() {
 		return dimensao;
 	}
@@ -74,6 +77,7 @@ public class Janela extends Casa {
 		this.material = material;
 	}
 	
+	//Sobrescrita do método toString
 	@Override
 	public String toString() {
 		return "Cor da Janela: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nDimensão: " + this.getDimensao() + "\nMaterial: " + this.getMaterial();
