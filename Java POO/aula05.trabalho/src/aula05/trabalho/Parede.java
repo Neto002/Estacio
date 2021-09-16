@@ -14,33 +14,70 @@ public class Parede extends Casa {
 		
 	}
 	
+	Parede(String cor) {
+		super(cor);
+	}
+	
+	Parede(String cor, double tamanho) {
+		super(cor, tamanho);
+	}
+	
+	Parede(String cor, double tamanho, String localizacao) {
+		this(cor, tamanho);
+		this.setLocalizacao(localizacao);
+	}
+	
+	Parede(String cor, double tamanho, String localizacao, double altura) {
+		this(cor, tamanho, localizacao);
+		this.setAltura(altura);
+		
+	}
+	
 	@Override
 	public void entradaDados() {
+		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
 		
+		System.out.println("=======Entrada de dados para a Parede=======");
 		System.out.println("Digite a cor: ");
-		String cor = teclado.nextLine();
+		String cor = teclado.next();
 		
 		System.out.println("Digite o tamanho: ");
 		double tamanho = teclado.nextDouble();
 		
-		System.out.println("Digite a dimensão: ");
-		String dimensao = teclado.nextLine();
+		System.out.println("Digite a localização: ");
+		String localizacao = teclado.next();
 		
-		System.out.println("Digite o material: ");
-		String material = teclado.nextLine();
+		System.out.println("Digite a altura: ");
+		double altura = teclado.nextDouble();
+		
 		
 		this.setCor(cor);
 		this.setTamanho(tamanho);
-		this.setDimensao(dimensao);
-		this.setMaterial(material);
+		this.setLocalizacao(localizacao);
+		this.setAltura(altura);
 		
-		teclado.close();
 	}
 	
+	public String getLocalizacao() {
+		return localizacao;
+	}
+
+	public void setLocalizacao(String localizacao) {
+		this.localizacao = localizacao;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
 	@Override
 	public String toString() {
-		return
+		return "Cor da Porta: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nLocalização: " + this.getLocalizacao() + "\nAltura: " + this.getAltura();
 	}
 	
 }

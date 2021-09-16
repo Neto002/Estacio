@@ -22,44 +22,40 @@ public class Casa {
 	}
 	
 	Casa(String cor, double tamanho) {
-		this.setCor(cor);
+		this(cor);
 		this.setTamanho(tamanho);
 	}
 	
 	Casa(String cor, double tamanho, Janela janela) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
+		this(cor, tamanho);
 		this.setJanela(janela);
 	}
 	
 	Casa(String cor, double tamanho, Janela janela, Porta porta) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
-		this.setJanela(janela);
+		this(cor, tamanho, janela);
 		this.setPorta(porta);
 	}
 	
 	Casa(String cor, double tamanho, Janela janela, Porta porta, Parede parede) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
-		this.setJanela(janela);
-		this.setPorta(porta);
+		this(cor, tamanho, janela, porta);
 		this.setParede(parede);
 	}
 	
 	public void entradaDados() {
+		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
 		
+		System.out.println("=======Entrada de dados para a Casa=======");
 		System.out.println("Digite a cor: ");
-		String cor = teclado.nextLine();
+		String cor = teclado.next();
 		
 		System.out.println("Digite o tamanho: ");
 		double tamanho = teclado.nextDouble();
 		
+		
 		this.setCor(cor);
 		this.setTamanho(tamanho);
 		
-		teclado.close();
 	}
 
 	public String getCor() {
@@ -104,7 +100,9 @@ public class Casa {
 	
 	@Override
 	public String toString() {
-		return "Casa\nCor: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nJanela: \n" + this.getJanela() + "\nPorta: \n" + this.getPorta() + "\nParede: \n" + this.getParede();
+		return "\n====================== Informações da casa ======================\nCor: " + this.getCor() + "\nTamanho: " + this.getTamanho() + 
+				"\n--------Janela--------\n" + this.getJanela() + "\n--------Porta--------\n" + this.getPorta() + "\n--------Parede--------\n" + 
+				this.getParede() + "\n=================================================================";
 	}
 	
 }

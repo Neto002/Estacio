@@ -16,47 +16,42 @@ public class Porta extends Casa {
 	}
 	
 	Porta(String cor) {
-		this.setCor(cor);
+		super(cor);
 	}
 	
 	Porta(String cor, double tamanho) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
+		super(cor, tamanho);
 	}
 	
 	Porta(String cor, double tamanho, double altura) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
+		this(cor, tamanho);
 		this.setAltura(altura);
 	}
 	
 	Porta(String cor, double tamanho, double altura, double largura) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
-		this.setAltura(altura);
+		this(cor, tamanho, altura);
 		this.setLargura(largura);
 	}
 	
 	Porta(String cor, double tamanho, double altura, double largura, String material) {
-		this.setCor(cor);
-		this.setTamanho(tamanho);
-		this.setAltura(altura);
-		this.setLargura(largura);
+		this(cor, tamanho, altura, largura);
 		this.setMaterial(material);
 	}
 	
 	@Override
 	public void entradaDados() {
+		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
 		
+		System.out.println("=======Entrada de dados para a Porta=======");
 		System.out.println("Digite a cor: ");
-		String cor = teclado.nextLine();
+		String cor = teclado.next();
 		
 		System.out.println("Digite o tamanho: ");
 		double tamanho = teclado.nextDouble();
 		
 		System.out.println("Digite o material: ");
-		String material = teclado.nextLine();
+		String material = teclado.next();
 		
 		System.out.println("Digite a altura: ");
 		double altura = teclado.nextDouble();
@@ -64,13 +59,13 @@ public class Porta extends Casa {
 		System.out.println("Digite a largura: ");
 		double largura = teclado.nextDouble();
 		
+		
 		this.setCor(cor);
 		this.setTamanho(tamanho);
-		this.material = material;
+		this.setMaterial(material);
 		this.setAltura(altura);
 		this.setLargura(largura);
 		
-		teclado.close();
 	}
 	
 	public double getAltura() {
@@ -99,6 +94,6 @@ public class Porta extends Casa {
 	
 	@Override
 	public String toString() {
-		return "Cor da Porta: " + this.getCor() + "Tamanho: " + this.getTamanho() + "\nMaterial: " + this.getMaterial() + "\nAltura: " + this.getAltura() + "\nLargura: " + this.getLargura();
+		return "Cor da Porta: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nMaterial: " + this.getMaterial() + "\nAltura: " + this.getAltura() + "\nLargura: " + this.getLargura();
 	}
 }

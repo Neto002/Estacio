@@ -14,50 +14,48 @@ public class Janela extends Casa {
 		
 	}
 	
-	Janela(String dimensao) {
+	Janela(String cor) {
+		super(cor);
+	}
+	
+	Janela(String cor, double tamanho) {
+		super(cor, tamanho);
+	}
+	
+	Janela(String cor, double tamanho, String dimensao) {
+		super(cor, tamanho);
 		this.setDimensao(dimensao);
 	}
 	
-	Janela(String dimensao, String material) {
-		this.setDimensao(dimensao);
+	Janela(String cor, double tamanho, String dimensao, String material) {
+		this(cor, tamanho, dimensao);
 		this.setMaterial(material);
-	}
-	
-	Janela(String dimensao, String material, String cor) {
-		this.setDimensao(dimensao);
-		this.setMaterial(material);
-		this.setCor(cor);
-	}
-	
-	Janela(String dimensao, String material, String cor, double tamanho) {
-		this.setDimensao(dimensao);
-		this.setMaterial(material);
-		this.setCor(cor);
-		this.setTamanho(tamanho);
 	}
 	
 	@Override
 	public void entradaDados() {
+		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
 		
+		System.out.println("=======Entrada de dados para a Janela=======");
 		System.out.println("Digite a cor: ");
-		String cor = teclado.nextLine();
+		String cor = teclado.next();
 		
 		System.out.println("Digite o tamanho: ");
 		double tamanho = teclado.nextDouble();
 		
 		System.out.println("Digite a dimensão: ");
-		String dimensao = teclado.nextLine();
+		String dimensao = teclado.next();
 		
 		System.out.println("Digite o material: ");
-		String material = teclado.nextLine();
+		String material = teclado.next();
+		
 		
 		this.setCor(cor);
 		this.setTamanho(tamanho);
 		this.setDimensao(dimensao);
 		this.setMaterial(material);
 		
-		teclado.close();
 	}
 
 	public String getDimensao() {
@@ -78,7 +76,7 @@ public class Janela extends Casa {
 	
 	@Override
 	public String toString() {
-		return "Cor da Janela: " + this.getCor() + "Tamanho: " + this.getTamanho() + "\nDimensão: " + this.getDimensao() + "\nMaterial: " + this.getMaterial();
+		return "Cor da Janela: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nDimensão: " + this.getDimensao() + "\nMaterial: " + this.getMaterial();
 	}
 	
 }
