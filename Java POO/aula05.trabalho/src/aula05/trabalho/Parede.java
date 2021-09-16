@@ -6,8 +6,11 @@ package aula05.trabalho;
 import java.util.Scanner;
 
 public class Parede extends Casa {
+	
+	private String localizacao;
+	private double altura;
 
-	/*Parede() {
+	Parede() {
 		
 	}
 	
@@ -38,6 +41,6 @@ public class Parede extends Casa {
 	@Override
 	public String toString() {
 		return
-	}*/
+	}
 	
 }

@@ -15,23 +15,23 @@ public class Janela extends Casa {
 	}
 	
 	Janela(String dimensao) {
-		this.dimensao = dimensao;
+		this.setDimensao(dimensao);
 	}
 	
 	Janela(String dimensao, String material) {
-		this.dimensao = dimensao;
-		this.material = material;
+		this.setDimensao(dimensao);
+		this.setMaterial(material);
 	}
 	
 	Janela(String dimensao, String material, String cor) {
-		this.dimensao = dimensao;
-		this.material = material;
+		this.setDimensao(dimensao);
+		this.setMaterial(material);
 		this.setCor(cor);
 	}
 	
 	Janela(String dimensao, String material, String cor, double tamanho) {
-		this.dimensao = dimensao;
-		this.material = material;
+		this.setDimensao(dimensao);
+		this.setMaterial(material);
 		this.setCor(cor);
 		this.setTamanho(tamanho);
 	}
@@ -78,7 +78,7 @@ public class Janela extends Casa {
 	
 	@Override
 	public String toString() {
-		return "Cor da Janela: " + this.getCor() + "Tamanho: " + this.getTamanho() + "\nDimensão: " + this.dimensao + "\nMaterial: " + this.material;
+		return "Cor da Janela: " + this.getCor() + "Tamanho: " + this.getTamanho() + "\nDimensão: " + this.getDimensao() + "\nMaterial: " + this.getMaterial();
 	}
 	
 }

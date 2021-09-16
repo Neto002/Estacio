@@ -18,33 +18,33 @@ public class Casa {
 	}
 	
 	Casa(String cor) {
-		this.cor = cor;
+		this.setCor(cor);
 	}
 	
 	Casa(String cor, double tamanho) {
-		this.cor = cor;
-		this.tamanho = tamanho;
+		this.setCor(cor);
+		this.setTamanho(tamanho);
 	}
 	
 	Casa(String cor, double tamanho, Janela janela) {
-		this.cor = cor;
-		this.tamanho = tamanho;
-		this.janela = janela;
+		this.setCor(cor);
+		this.setTamanho(tamanho);
+		this.setJanela(janela);
 	}
 	
 	Casa(String cor, double tamanho, Janela janela, Porta porta) {
-		this.cor = cor;
-		this.tamanho = tamanho;
-		this.janela = janela;
-		this.porta = porta;
+		this.setCor(cor);
+		this.setTamanho(tamanho);
+		this.setJanela(janela);
+		this.setPorta(porta);
 	}
 	
 	Casa(String cor, double tamanho, Janela janela, Porta porta, Parede parede) {
-		this.cor = cor;
-		this.tamanho = tamanho;
-		this.janela = janela;
-		this.porta = porta;
-		this.parede = parede;
+		this.setCor(cor);
+		this.setTamanho(tamanho);
+		this.setJanela(janela);
+		this.setPorta(porta);
+		this.setParede(parede);
 	}
 	
 	public void entradaDados() {
@@ -104,7 +104,7 @@ public class Casa {
 	
 	@Override
 	public String toString() {
-		return "Casa\nCor: " + this.cor + "\nTamanho: " + this.tamanho + "\nJanela: \n" + this.janela + "\nPorta: " + this.porta + "\nParede: " + this.parede;
+		return "Casa\nCor: " + this.getCor() + "\nTamanho: " + this.getTamanho() + "\nJanela: \n" + this.getJanela() + "\nPorta: \n" + this.getPorta() + "\nParede: \n" + this.getParede();
 	}
 	
 }
