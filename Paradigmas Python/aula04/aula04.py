@@ -57,3 +57,4 @@ print(f'Nota: {n}')
 print(f'A média aritmética é: {calcula_media():.2f}')
 
 #Leia nome e idade e apresente se a pessoa é maior de idade (>=17) e em q ano nasceu
+
