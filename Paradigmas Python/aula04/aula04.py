@@ -68,10 +68,58 @@ else:
 
 #Um algoritmo em Python que calcule uma lista dos fatorial dos números de 1 até 10 e imprima.
 
+def fatorial(numero):
+    i = numero
+    fatorial = 1
+    for i in range(numero, 0, -1):
+        fatorial *= i
+    return fatorial
+
+for i in range(1, 11):
+    print(fatorial(i))
+
+#Exercício 2
 #Solicita do usuário o número de elementos de um conjunto (𝑛) e o valor da combinação dos elementos desse conjunto (𝑘) e imprima a qtde de elementos resultantes da combinação,tal que 𝑛>=𝑘.
+
+from math import comb
+
+n = 0
+k = int(input('Digite o valor da combinação: '))
+while True:
+    n = int(input('Digite o número de elementos: '))
+    if (n >= k):
+        break
+    else:
+        print('Por favor, digite um valor maior ou igual a k.')
+print(comb(n, k))
 
 #Faça o mesmo exercício anterior para saber a quantidade de elementos resultantes da permutação.
 
+from math import perm
+
+n = 0
+k = int(input('Digite o valor da combinação: '))
+while True:
+    n = int(input('Digite o número de elementos: '))
+    if (n >= k):
+        break
+    else:
+        print('Por favor, digite um valor maior ou igual a k.')
+print(perm(n, k))
+
 #Solicita do usuário os valores do cateto e retorna a hipotenusa.
 
+from math import hypot
+
+cateto1 = float(input('Digite o cateto 1: '))
+cateto2 = float(input('Digite o cateto 2: '))
+
+print(f'A hipotenusa é: {hypot(cateto1, cateto2):.2f}')
+
 #Calcule o logaritmo de um número informado pelo usuário, juntamente com a sua base.
+
+from math import log
+
+num = float(input('Digite um numero: '))
+base = float(input('Digite a base: '))
+print(f'O log de {num} na base {base} é: {log(num, base):.2f}')
