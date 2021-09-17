@@ -50,11 +50,11 @@ elif (n <= 5):
     print('REPROVADO')
 else:
     print('RECUPERAÇÃO')
-print(f'Nota: {n}')
+print(f'Nota: {n:.2f}')
 
 #Media aritmetica de n notas
 
-print(f'A média aritmética é: {calcula_media():.2f}')
+#print(f'A média aritmética é: {calcula_media():.2f}')
 
 #Leia nome e idade e apresente se a pessoa é maior de idade (>=17) e em q ano nasceu
 
