@@ -22,7 +22,7 @@ print(f'O valor do fatorial de {numero} é {calc_fatorial(numero)}')'''
 #Exercicio 1
 #Faça um programa q leia n notas de um aluno que estejam entre 0 e 10 e informe se o aluno está aprovado (>=7), reprovado (<=5) ou recuperação (>= 5,1 e <= 6,9)
 
-def calcula_media():
+'''def calcula_media():
     n = 0
     qtd = 0
     media = 0
@@ -54,7 +54,16 @@ print(f'Nota: {n:.2f}')
 
 #Media aritmetica de n notas
 
-#print(f'A média aritmética é: {calcula_media():.2f}')
+print(f'A média aritmética é: {calcula_media():.2f}')'''
 
 #Leia nome e idade e apresente se a pessoa é maior de idade (>=17) e em q ano nasceu
+
+nome = str(input('Digite seu nome: ')).strip().title()
+idade = int(input('Digite sua idade: '))
+ano_nascimento = 2021 - idade
+
+if (idade >= 17):
+    print(f'Maior de idade, nasceu no ano {ano_nascimento}')
+else:
+    print(f'Menor de idade, nasceu no ano {ano_nascimento}')
 
