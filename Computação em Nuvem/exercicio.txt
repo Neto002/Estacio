@@ -1,0 +1,154 @@
+1. Dê uma definição do seu entendimento de Computação em Nuvem e sobre seus principais
+modelos de serviços.
+R. A Computação em Nuvem permite que tenhamos capacidade de armazenamento,
+infraestrutura, plataformas e outros recursos através da internet, através de serviços ofertados
+pelas empresas da área. Dentre seus modelos de serviço, destacam-se IaaS (Infrastructure
+as a Service), na qual o serviço contratado é toda a infraestrutura necessária para uma
+empresa, como processamento e capacidade de memória; PaaS (Platform as a Service), que
+é o oferecimento do ambiente onde serão desenvolvidos os Softwares, como o Windows
+Azure; e SaaS (Software as a Service), a própria aplicação é ofertada como um serviço, como
+a Netflix.
+
+2. O modelo de implantação em nuvem pública é caracterizado como:
+a) Um conjunto de serviços gratuitos presentes em uma nuvem
+b) Um conjunto de recursos privados, disponíveis apenas para uma grande organização
+c) Um conjunto de serviços únicos e isolados entre eles
+**d) Um conjunto de serviços de computação sendo ofertados por terceiros usando uma
+comunicação via Internet.
+e) Um conjunto de recursos apenas de banco de dados e processamento
+
+Justificativa: A nuvem pública fica disponível para todos que possuem o serviço e que
+estejam concectados à internet.
+
+3. Ficar protegido contra a perda de dados caso falte energia ou ainda acessar os seus arquivos
+de qualquer lugar sem precisar instalar programas ou armazenar dados localmente, são
+possibilidades que surgiram com o advento do serviço de:
+**a) Computador em nuvem
+b) On-premise.
+c) Computação em nuvem.
+d) Cloud off-line.
+e) Banco de dados on-line.
+
+Justificativa. Daas (ou Desktop as a Service), provê uma máquina virtual hospedada na
+nuvem para os clientes, sem a necessidade de se instalar nada localmente, como por
+exemplo o Citrix.
+
+
+4. Entre as vantagens da Cloud Computing listadas a seguir, uma está incorreta. Assinale-a.
+a) O usuário pode acessar as aplicações independentemente do seu sistema operacional,
+sem se preocupar com a estrutura para executá-las, como hardware, controle de
+segurança, manutenção etc.
+b) Compartilhamento de informações e trabalho colaborativo se tornam mais fáceis, pois
+todos os usuários acessam as aplicações e os dados da nuvem.
+c) O usuário pode contar com alta disponibilidade. Se um servidor parar de funcionar, por
+exemplo, outros da estrutura continuam a oferecer o serviço.
+**d) O usuário sempre economiza, embora não existam aplicações gratuitas na nuvem. Ele
+paga somente pelos recursos que usar ou pelo tempo de utilização. Não há o modelo
+de se pagar por uma licença integral de uso.
+e) O usuário pode precisar instalar um programa cliente em seu computador ou dispositivo
+móvel. Mas, nesse caso, todo ou a maior parte do processamento (e até mesmo do
+armazenamento de dados) fica na nuvem.
+
+Justificativa. Além de existirem serviços gratuitos, existem também aqueles nos quais é
+necessário o pagamento de uma assinatura fixa em um período estipulado pela empresa.
+
+5. Em qual dos modelos de serviço de computação em nuvem abaixo, tipicamente, os requisitos
+de banda, latência e poder de processamento são substituídos por garantias do nível de
+serviço, traduzidos em termos de disponibilidade e desempenho adequados?
+**a) IaaS
+b) PaaS
+c) SaaS
+d) Todas as alternativas anteriores.
+e) Nenhuma das anteriores.
+
+Justificativa. IaaS (ou Infrastructure as a Service) provê toda a infraestrutura necessária para
+um cliente (como poder de processamento, capacidade de memória, redes, etc).
+
+6. Escolha um modelo de serviço (que não seja IaaS, PaaS e SaaS) e descreva as
+características principais do modelo de serviço em nuvem escolhido.
+
+R. Daas (Desktop as a Service), é um serviço no qual o próprio computador é oferecido através
+da nuvem, no qual o cliente pode usufruir como em seu próprio computador pessoal.
+
+7. Em se tratando de computação na nuvem (cloud computing), quando se usa um software em
+regime de utilização web (como, por exemplo, o software Google Does), esse é classificado
+como sendo do tipo:
+a) Datacenter Proprietário
+b) Plataforma como Serviço
+c) Infraestrutura como Serviço
+**d) Software como Serviço
+e) Banco de dados como serviço 
+
+Justificativa. Aplicações como Netflix, Google Drive, entre outras são ofertadas pelas
+empresas e seu acesso é dado através da conexão à internet.
+
+8. Referentes aos modelos de implantação de computação em nuvem:
+As aplicações baseadas na nuvem ________________ podem se beneficiar de fragmentos
+secundários da infraestrutura ou podem utilizar serviços de nível superior que reduzem as
+necessidades de gerenciamento, arquitetura e escalabilidade da infraestrutura principal
+O método mais comum de implantação ______________ é o que ocorre entre a nuvem e a
+infraestrutura local atual para estender e aumentar a infraestrutura de uma empresa na nuvem
+enquanto recursos da nuvem são conectados ao sistema interno.
+A implantação de recursos locais, usando ferramentas de gerenciamento de virtualização e
+recursos, às vezes é chamada de "nuvem ______________". A implantação local não oferece
+muitos dos benefícios da computação em nuvem, mas, às vezes, é preferida por sua
+capacidade de oferecer recursos dedicados.
+Indique qual a opção a seguir preenche na ordem os espaços das definições acima:
+a) hibrida, pública, privada
+b) privada, hibrida, pública
+**c) pública, hibrida, privada
+d) SaaS, PaaS, IaaS
+e) local, privada, hibrida
+
+Justificativa. As nuvens públicas ficam disponíveis para qualquer pessoa, já a privada é
+somente acessada pela empresa, e a híbrida é a posse das duas por parte de alguma
+entidade.
+
+9. O modelo de implantação de um sistema de Computação em Nuvem cujos recursos são
+compartilhados de forma ampla, com acesso a qualquer usuário da Internet é denominado
+**a) nuvem pública.
+b) nuvem comunitária.
+c) nuvem híbrida.
+d) nuvem privada.
+e) nuvem exposta
+
+Justificativa. A nuvem pública fica disponível para todos os usuários que possuem uma
+conexão à Internet.
+
+10.Modelo de negócio que se caracteriza pela oferta de recursos computacionais
+(processamento, armazenamento e redes) cabendo ao usuário realizar a gestão, configuração
+e uso de acordo com suas necessidades.
+a) PaaS 
+**b) IaaS
+c) FaaS
+d) CaaS
+e) NaaS
+
+Justificativa. IaaS (ou Infrastructure as a Service) provê toda a infraestrutura necessária
+para um cliente (como poder de processamento, capacidade de memória, redes, etc).
+
+11.Considere que uma empresa decidiu separar suas operações administrativas e de vendas em
+duas nuvens distintas localizadas em países diferentes. A nuvem administrativa é privada
+localizada no Datacenter da empresa, e para a nuvem de venda foi contratado o provedor
+Amazon. Ambas as nuvens foram configuradas para permitir portabilidade de aplicativos e
+dados entre elas. Nesse caso a empresa possui uma nuvem:
+a) Privada
+b) Pública
+**c) Híbrida
+d) Comunitária
+e) Ubíqua
+
+Justificativa. A nuvem híbrida se dá quando a empresa possui duas ou mais nuvens em
+modalidades diferentes.
+
+12.Uma das métricas mais importantes, no sentido de que representa uma prioridade para as
+empresas que contratam um provedor em nuvem é:
+**a) Segurança
+b) Custo por cliente
+c) Portfólio de serviços
+d) Taxa de transferência
+e) Help desk
+
+Justificativa. Os serviços em nuvem precisam estar sempre demonstrando a sua
+segurança, já que os usuários muitas vezes estão confiando informações valiosas e que
+não podem ser perdidas.
