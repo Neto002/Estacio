@@ -16,7 +16,7 @@ def calc_fatorial(numero):
     return fatorial
 
 numero = int(input('Digite um número: '))
-print(f'O valor do fatorial de {numero} é {calc_fatorial(numero)}')'''
+print(f'O valor do fatorial de {numero} é {calc_fatorial(numero)}')
 
 #Exercicio 1
 #Faça um programa q leia n notas de um aluno que estejam entre 0 e 10 e informe se o aluno está aprovado (>=7), reprovado (<=5) ou recuperação (>= 5,1 e <= 6,9)
@@ -122,4 +122,4 @@ from math import log
 
 num = float(input('Digite um numero: '))
 base = float(input('Digite a base: '))
-print(f'O log de {num} na base {base} é: {log(num, base):.2f}')
+print(f'O log de {num} na base {base} é: {log(num, base):.2f}')'''
