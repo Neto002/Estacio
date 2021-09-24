@@ -19,7 +19,7 @@ nota = float(str(input('numero: ').replace(',', '.')))
 print(nota)'''
 
 
-# Elabore um programa que imprima uma sequência da tabuada da potência de base 2 e base 3 de uma lista de 0 até 10.
+'''# Elabore um programa que imprima uma sequência da tabuada da potência de base 2 e base 3 de uma lista de 0 até 10.
 
 for i in range (0, 22):
     if (i <= 10):
@@ -44,4 +44,12 @@ for i in range(1, 21):
     else:
         if(i == 11):
             print('Multiplicação:')
-        print(f'{numero} x {i-10} = {numero * (i-10)}')
+        print(f'{numero} x {i-10} = {numero * (i-10)}')'''
+
+
+# Comandos de formatação
+frase = 'testeformat'
+print(f'{frase:>20}')
+print(f'{frase:#>20}')
+print(f'{frase:#^20}')
+print(f'{frase:.6}')
