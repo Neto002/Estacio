@@ -48,8 +48,37 @@ for i in range(1, 21):
 
 
 # Comandos de formatação
-frase = 'testeformat'
+'''frase = 'testeformat'
 print(f'{frase:>20}')
 print(f'{frase:#>20}')
 print(f'{frase:#^20}')
-print(f'{frase:.6}')
+print(f'{frase:.6}')'''
+
+# Faça um programa em Python que tendo dois números inteiros informados do teclado, imprima a soma, multiplicação, subtração e divisão entre esses dois números. O programa deve impedir o usuário de informar o número zero no denominador da divisão.
+
+'''while True:
+    num1 = float(input('Digite o primeiro número: '))
+    while (num1 == 0):
+        num1 = float(input('Digite um número diferente de 0: '))
+    num2 = float(input('Digite o segundo número: '))
+    while (num2 == 0):
+        num2 = float(input('Digite um número diferente de 0: '))
+    if (num1 != 0 or num2 != 0):
+        break
+print(f'Soma: {num1+num2}\nMultiplicação: {num1*num2}\nSubtração: {num1-num2}\nDivisão: {num1/num2}')'''
+
+# Faça um algoritmo em Python que imprima na tela os números de 1 a 100 que são múltiplos de 4, um abaixo do outro. O mesmo programa também deve imprimir esses números um ao lado do outro. Imprima também a quantidade desses números.
+
+qtd = 0
+for i in range(1, 101):
+    if (i % 4 == 0):
+        print(i)
+        qtd += 1
+print(f'A quantidade de múltiplos de 4 é {qtd}')
+
+qtd = 0
+for i in range(1, 101):
+    if (i % 4 == 0):
+        print(i, end=', ' if i < 100 else '.\n')
+        qtd += 1
+print(f'A quantidade de múltiplos de 4 é {qtd}')
