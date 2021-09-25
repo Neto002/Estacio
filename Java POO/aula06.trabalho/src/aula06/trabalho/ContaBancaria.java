@@ -30,10 +30,10 @@ public class ContaBancaria {
 		while (true) {
 			if (saque > this.getSaldo()) {
 				Scanner teclado = new Scanner(System.in);
-				System.out.println("Não é possível sacar o valor desejado pois não há saldo suficiente para a operação. Saldo disponível: " + this.getSaldoFormatado());
+				System.out.println("Não é possível sacar o valor desejado pois não há saldo suficiente para a operação. Saldo disponível: " + 
+									this.getSaldoFormatado());
 				System.out.println("Por favor, digite um valor válido: ");
 				saque = teclado.nextDouble();
-				teclado.close();
 			} else {
 				this.setSaldo(this.getSaldo() - saque);
 				System.out.println("Saque efetivado com sucesso. Saldo disponível: " + this.getSaldoFormatado());

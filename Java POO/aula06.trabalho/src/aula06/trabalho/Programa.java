@@ -9,7 +9,6 @@ public class Programa {
 		ContaBancaria conta = new ContaBancaria();
 		Scanner teclado = new Scanner(System.in);
 		
-		
 		int escolha = 0;
 		
 		while (escolha != 5) {
