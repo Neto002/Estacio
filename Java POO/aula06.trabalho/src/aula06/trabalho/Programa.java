@@ -20,7 +20,9 @@ public class Programa {
 			//Seletor de operação do menu
 			switch (escolha) {
 				case 1: //Consulta de Saldo
-					System.out.println("Saldo: " + conta.getSaldoFormatado());
+					System.out.println("------------Consulta de Saldo------------");
+					System.out.println("\t    Saldo: " + conta.getSaldoFormatado());
+					System.out.println("-----------------------------------------");
 					break;
 				case 2: //Consulta de Data de Abertura da Conta
 					System.out.println("Data de Abertura da conta: " + conta.getDataAberturaFormatada());
