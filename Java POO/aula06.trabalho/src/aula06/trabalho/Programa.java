@@ -1,3 +1,7 @@
+/*
+ * Aluno: Antonio Gomes Ferreira Neto
+ * Matrícula: 202102570735
+ */
 package aula06.trabalho;
 
 import java.util.Scanner;
@@ -25,15 +29,21 @@ public class Programa {
 					System.out.println("-----------------------------------------");
 					break;
 				case 2: //Consulta de Data de Abertura da Conta
+					System.out.println("------------Consulta de Data de Abertura------------");
 					System.out.println("Data de Abertura da conta: " + conta.getDataAberturaFormatada());
+					System.out.println("----------------------------------------------------");
 					break;
 				case 3: //Depósito
+					System.out.println("----------------------Depósito---------------------");
 					System.out.println("Digite um valor a ser depositado na conta: ");
 					conta.depositar(teclado.nextDouble());
+					System.out.println("---------------------------------------------------");
 					break;
 				case 4: //Saque
+					System.out.println("----------------------Saque------------------------");
 					System.out.println("Digite um valor a ser sacado: ");
 					conta.sacar(teclado.nextDouble());
+					System.out.println("---------------------------------------------------");
 					break;
 				case 5: //Encerra o programa
 					System.out.println("Encerrando..");

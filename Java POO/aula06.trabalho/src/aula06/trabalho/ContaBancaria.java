@@ -21,7 +21,7 @@ public class ContaBancaria {
 	
 	//Método para depósitos
 	public void depositar(double deposito) {
-		this.setSaldo(deposito);
+		this.setSaldo(this.getSaldo() + deposito);
 		System.out.println("Saldo após depósito: " + this.getSaldoFormatado());
 	}
 	
@@ -63,8 +63,7 @@ public class ContaBancaria {
 	
 	//Método de Retorno da Data de Abertura formatada
 	public String getDataAberturaFormatada() {
-		String dataString = DateFormat.getDateInstance(DateFormat.SHORT).format(this.getDataAbertura());
-		return dataString;
+		return DateFormat.getDateInstance(DateFormat.SHORT).format(dataAbertura);
 	}
 	
 }
