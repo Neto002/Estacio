@@ -5,6 +5,8 @@
 package aula06.trabalho;
 
 import java.text.DateFormat;
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.Date;
 
@@ -40,7 +42,6 @@ public class ContaBancaria {
 				break;
 			}
 		}
-		
 	}
 	
 	//Getters e Setters
@@ -58,12 +59,15 @@ public class ContaBancaria {
 	
 	//Método de Retorno do Saldo formatado
 	public String getSaldoFormatado() {
-		return String.format("R$%.2f", this.getSaldo());
+		String saldoFormatado = new DecimalFormat("R$ #,##0.00").format(this.getSaldo());
+		return saldoFormatado;
 	}
 	
 	//Método de Retorno da Data de Abertura formatada
 	public String getDataAberturaFormatada() {
-		return DateFormat.getDateInstance(DateFormat.SHORT).format(dataAbertura);
+		SimpleDateFormat dataAberturaFormatada = new SimpleDateFormat("dd/MM/yyyy");
+		//return DateFormat.getDateInstance(DateFormat.SHORT).format(dataAbertura); ou
+		return dataAberturaFormatada.format(this.dataAbertura);
 	}
 	
 }
