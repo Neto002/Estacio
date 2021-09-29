@@ -69,7 +69,7 @@ print(f'Soma: {num1+num2}\nMultiplicação: {num1*num2}\nSubtração: {num1-num2
 
 # Faça um algoritmo em Python que imprima na tela os números de 1 a 100 que são múltiplos de 4, um abaixo do outro. O mesmo programa também deve imprimir esses números um ao lado do outro. Imprima também a quantidade desses números.
 
-qtd = 0
+'''qtd = 0
 for i in range(1, 101):
     if (i % 4 == 0):
         print(i)
@@ -81,4 +81,4 @@ for i in range(1, 101):
     if (i % 4 == 0):
         print(i, end=', ' if i < 100 else '.\n')
         qtd += 1
-print(f'A quantidade de múltiplos de 4 é {qtd}')
+print(f'A quantidade de múltiplos de 4 é {qtd}')'''
