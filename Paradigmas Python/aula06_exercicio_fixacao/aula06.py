@@ -1,4 +1,4 @@
-# Elabore um algoritmo em Linguagem de Programação em Python que imprima na tela os números e a quantidade de números pares, os números e a quantidade de ímpares e os números e a quantidade de múltiplos de 3 que existem entre 1 e 150. Escreva seu programa abaixo.
+# Elabore um algoritmo em Linguagem de Programação em Python que imprima na tela os números e a quantidade de números pares, os números e a quantidade de ímpares e os números e a quantidade de múltiplos de 3 que existem entre 1 e 150.
 
 quantidade_pares = 0
 quantidade_impares = 0
