@@ -10,10 +10,13 @@ public class Programa {
 		Produto[] produtos = new Produto[10];
 				
 		for (int i = 0; i < 10; i++) {
+			
 			produtos[i] = new Produto();
+			
 		}
 		
 		try {
+			
 			System.out.print("Digite o índice no qual você deseja adicionar o produto: ");
 			int posicao = scanner.nextInt();
 
@@ -28,16 +31,21 @@ public class Programa {
 			System.out.print(produtos[posicao]);
 			
 		} catch (ArrayIndexOutOfBoundsException e) {
+			
 			System.out.println("\nÍndice especificado não existe no vetor, favor digitar um valor entre 0 e 9.");
+			
 		}
 		
 		try {
+			
 			System.out.print("Digite um produto para visualizar a partir do índice: ");
 			int posicao = scanner.nextInt();
 			
 			System.out.println(produtos[posicao]);
 		} catch (ArrayIndexOutOfBoundsException e) {
+			
 			System.out.println("\nÍndice especificado não existe no vetor, favor digitar um valor entre 0 e 9.");
+			
 		}
 		
 		scanner.close();
