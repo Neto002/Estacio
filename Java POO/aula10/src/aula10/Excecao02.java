@@ -15,7 +15,6 @@ public class Excecao02 {
 
 	private static void maiuscula(String frase)  {
 		String novaFrase = frase.toUpperCase();
-		
 		System.out.println("Frase antiga: " + frase + "\nFrase nova: " + novaFrase);
 	}
 	
