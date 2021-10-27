@@ -13,7 +13,7 @@ public class Excecao02 {
 		
 	}
 
-	private static void maiuscula(String frase)  {
+	private static void maiuscula(String frase) throws NullPointerException {
 		String novaFrase = frase.toUpperCase();
 		System.out.println("Frase antiga: " + frase + "\nFrase nova: " + novaFrase);
 	}
