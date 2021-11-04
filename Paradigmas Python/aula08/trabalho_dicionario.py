@@ -15,7 +15,7 @@ for i, j in dicionario.items():
 
 # Elabore um script em Python que leia um dicionário 1 e apresente um novo dicionário 2 com os tamanhos dos valores do dicionário 1
 
-lista = [(int(input('Chave 1: ')), input('Valor 1: ')), (int(input('Chave 2: ')), input('Valor 2: ')), (int(input('Chave 3: ')), input('Valor 3: ')), (int(input('Chave 4: ')), input('Valor 4: ')), (int(input('Chave 5: ')), input('Valor 5: '))]
+'''lista = [(int(input('Chave 1: ')), input('Valor 1: ')), (int(input('Chave 2: ')), input('Valor 2: ')), (int(input('Chave 3: ')), input('Valor 3: ')), (int(input('Chave 4: ')), input('Valor 4: ')), (int(input('Chave 5: ')), input('Valor 5: '))]
 
 dicionario1 = dict(lista)
 
@@ -24,6 +24,16 @@ dicionario2 = {}
 for i, j in dicionario1.items():
     dicionario2.update({j:len(j)})
 
-print(dicionario2)
+print(dicionario2)'''
 
-# Converter duas listas em elementos de um dicionário,
+# Converter duas listas em elementos de um dicionário
+
+chaves = [input('Chave 1: '), input('Chave 2: '), input('Chave 3: ')]
+valores = [input('Valor 1: '), input('Valor 2: '), input('Valor 3: ')]
+
+dicionario = {}
+
+for i in range(3):
+    dicionario.update({chaves[i]:valores[i]})
+
+print(dicionario)
