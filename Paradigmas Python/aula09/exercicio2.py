@@ -21,8 +21,3 @@ def fatorial(n):
         return fatorial(n-1) * n
 
 print(fatorial(5))'''
-
-S = [2*x for x in range(101) if x%2==0]
-A = [x**2+x+1 for x in range(100) if x%2==0]
-print(S)
-print(A)
