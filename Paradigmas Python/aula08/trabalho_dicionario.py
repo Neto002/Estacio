@@ -1,4 +1,4 @@
-'''# Elabore um script em Python que leia uma String e conte a quantidade de ocorrências de caracteres dessa string
+# Elabore um script em Python que leia uma String e conte a quantidade de ocorrências de caracteres dessa string
 
 string = str(input('Digite aqui qualquer coisa para a análise: ')).strip()
 i = 0
@@ -36,4 +36,4 @@ dicionario = {}
 for i in range(3):
     dicionario.update({chaves[i]:valores[i]})
 
-print(dicionario)'''
+print(dicionario)
