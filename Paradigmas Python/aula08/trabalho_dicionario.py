@@ -14,9 +14,7 @@ for i, j in dicionario.items():
 
 # Elabore um script em Python que leia um dicionário 1 e apresente um novo dicionário 2 com os tamanhos dos valores do dicionário 1
 
-lista = [(int(input('Chave 1: ')), input('Valor 1: ')), (int(input('Chave 2: ')), input('Valor 2: ')), (int(input('Chave 3: ')), input('Valor 3: ')), (int(input('Chave 4: ')), input('Valor 4: ')), (int(input('Chave 5: ')), input('Valor 5: '))]
-
-dicionario1 = dict(lista)
+dicionario1 = {int(input('Chave 1: ')):input('Valor 1: '), int(input('Chave 2: ')): input('Valor 2: '), int(input('Chave 3: ')): input('Valor 3: '), int(input('Chave 4: ')): input('Valor 4: '), int(input('Chave 5: ')): input('Valor 5: ')}
 
 dicionario2 = {}
 
