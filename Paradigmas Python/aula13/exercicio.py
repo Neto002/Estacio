@@ -48,3 +48,4 @@ salario = float(input('Digite seu salário: '))
 porcentagem = 0.15 if salario < 500 else 0.10 if salario >= 500 and salario <= 1000 else 0.05
 
 print(f'Seu novo salário é de R${salario + (salario*porcentagem):.2f}')
+
