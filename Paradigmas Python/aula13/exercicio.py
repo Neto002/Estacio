@@ -1,4 +1,4 @@
-#Instanciação classe Pessoa
+'''#Instanciação classe Pessoa
 
 class Pessoa(object):
     def __init__(self, nome, idade, peso):
@@ -47,5 +47,7 @@ print([x for x in range(5, 101) if x%7==0 and x%5!=0])
 salario = float(input('Digite seu salário: '))
 porcentagem = 0.15 if salario < 500 else 0.10 if salario >= 500 and salario <= 1000 else 0.05
 
-print(f'Seu novo salário é de R${salario + (salario*porcentagem):.2f}')
+print(f'Seu novo salário é de R${salario + (salario*porcentagem):.2f}')'''
 
+nome = "12345678911111111111"
+print(nome[:9])
