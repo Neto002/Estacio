@@ -1,16 +1,16 @@
 ﻿  main.c
-D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(63,13): warning C4477: 'scanf_s': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
-D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(66,13): warning C4477: 'scanf_s': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
-D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(69,13): warning C4477: 'scanf_s': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
-D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(72,13): warning C4477: 'scanf_s': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
-D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(16): warning C4716: 'exercicio1': deve retornar um valor
+D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(63,11): warning C4477: 'scanf': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
+D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(66,11): warning C4477: 'scanf': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
+D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(69,11): warning C4477: 'scanf': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
+D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(72,11): warning C4477: 'scanf': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 1 tem o tipo 'float *'
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(33): warning C4716: 'exercicio2': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(53): warning C4716: 'exercicio3': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(79): warning C4716: 'exercicio4': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(101): warning C4716: 'exercicio5': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(116): warning C4716: 'exercicio6': deve retornar um valor
+D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(130): warning C4716: 'exercicio7': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(152): warning C4716: 'exercicio8': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(159): warning C4716: 'exercicio9': deve retornar um valor
 D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(168): warning C4716: 'exercicio10': deve retornar um valor
-D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(130): warning C4716: 'exercicio7': deve retornar um valor
+D:\Projects\Estacio\Estrututra de Dados\aula01\main.c(16): warning C4716: 'exercicio1': deve retornar um valor
   aula01.vcxproj -> D:\Projects\Estacio\Estrututra de Dados\aula01\x64\Debug\aula01.exe

@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-CRT_SECURE_NO_WARNINGS;
+#pragma warning(disable : 4996)
 
 int exercicio1() {
     printf("Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor\n");
     int valor;
 
     printf("Digite um valor: ");
-    scanf_s("%d", &valor);
+    scanf("%d", &valor);
 
     int antecessor = valor - 1;
 
@@ -22,10 +22,10 @@ int exercicio2() {
     float areaRetangulo;
 
     printf("Digite o valor da base: ");
-    scanf_s("%f", &base);
+    scanf("%f", &base);
 
     printf("Digite o valor da altura: ");
-    scanf_s("%f", &altura);
+    scanf("%f", &altura);
 
     areaRetangulo = base * altura;
 
@@ -39,13 +39,13 @@ int exercicio3() {
     int idadeDias;
 
     printf("Digite sua idade em anos: ");
-    scanf_s("%d", &idadeAnos);
+    scanf("%d", &idadeAnos);
 
     printf("%d anos e quantos meses: ", idadeAnos);
-    scanf_s("%d", &idadeMeses);
+    scanf("%d", &idadeMeses);
 
     printf("%d anos, %d meses e quantos dias: ", idadeAnos, idadeMeses);
-    scanf_s("%d", &idadeDias);
+    scanf("%d", &idadeDias);
 
     idadeDias = idadeDias + (idadeAnos * 365) + (idadeMeses * 30);
 
@@ -60,16 +60,16 @@ int exercicio4() {
     float votoValido;
 
     printf("Digite o total de eleitores do municipio: ");
-    scanf_s("%d", &totalEleitores);
+    scanf("%d", &totalEleitores);
 
     printf("Digite o total de votos brancos: ");
-    scanf_s("%d", &votoBranco);
+    scanf("%d", &votoBranco);
 
     printf("Digite o total de votos nulos: ");
-    scanf_s("%d", &votoNulo);
+    scanf("%d", &votoNulo);
 
     printf("Digite o total de votos validos: ");
-    scanf_s("%d", &votoValido);
+    scanf("%d", &votoValido);
 
     float porcentoBranco = (votoBranco/totalEleitores) * 100;
     float porcentoNulo = (votoNulo / totalEleitores) * 100;
@@ -89,10 +89,10 @@ int exercicio5() {
     float percentualReajuste;
 
     printf("Digite seu salario mensal: ");
-    scanf_s("%f", &salario);
+    scanf("%f", &salario);
 
     printf("Digite o percentual de reajuste: ");
-    scanf_s("%f", &percentualReajuste);
+    scanf("%f", &percentualReajuste);
 
     float salarioReajustado = calculaSalario(salario, percentualReajuste);
 
@@ -105,7 +105,7 @@ int exercicio6() {
     int valor;
 
     printf("Digite um valor: ");
-    scanf_s("%d", &valor);
+    scanf("%d", &valor);
 
     if (valor > 10) {
         printf("E MAIOR QUE 10\n");
@@ -119,7 +119,7 @@ int exercicio7() {
     printf("Ler um valor e escrever se e positivo ou negativo (considere o valor zero como positivo).\n");
     int valor;
     printf("Digite um valor: ");
-    scanf_s("%d", &valor);
+    scanf("%d", &valor);
 
     if (valor >= 0) {
         printf("Positivo\n");
@@ -134,10 +134,10 @@ int exercicio8() {
     float av1, av2, media;
 
     printf("Digite sua primeira nota: ");
-    scanf_s("%f", &av1);
+    scanf("%f", &av1);
 
     printf("Digite sua segunda nota: ");
-    scanf_s("%f", &av2);
+    scanf("%f", &av2);
 
     media = (av1 + av2) / 2;
 
