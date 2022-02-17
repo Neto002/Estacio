@@ -32,8 +32,8 @@ int exercicio2() {
 
 int exercicio3() {
     printf("Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias\n");
-    short idadeAnos;
-	short idadeMeses;
+    int idadeAnos;
+	int idadeMeses;
 	int idadeDias;
 
 	printf("Digite sua idade em anos: ");
@@ -71,9 +71,9 @@ int exercicio4() {
 	printf("Digite o total de votos validos: ");
 	scanf("%d", &votoValido);
 
-	float porcentoBranco = (votoBranco/totalEleitores) * 100;
-	float porcentoNulo = (votoNulo/totalEleitores) * 100;
-	float porcentoValido = (votoValido/totalEleitores) * 100;
+	float porcentoBranco = (totalEleitores / votoBranco)/100;
+	float porcentoNulo = (totalEleitores / votoNulo)/100;
+	float porcentoValido = (totalEleitores / votoValido)/100;
 
 	printf("Porcentagens: \nVotos Brancos: %.2f%%\nVotos Nulos: %.2f%%\nVotos Validos: %.2f%%\n", porcentoBranco, porcentoNulo, porcentoValido);
 }
