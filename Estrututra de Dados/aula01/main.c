@@ -167,6 +167,35 @@ int exercicio10() {
     }
 }
 
+int exercicio11() {
+    printf("Faça um programa que leia dois valores x e y inteiros do teclado e faça a troca do conteúdo das variáveis usando função e ponteiro.\n");
+
+    int x, y;
+    int *pt_x, *pt_y;
+
+    printf("Digite um valor para x: ");
+    scanf("%d", &x);
+    pt_x = &x;
+    printf("Digite um valor para y: ");
+    scanf("%d", &y);
+    pt_y = &y;
+}
+
+int exercicio12() {
+    printf("Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real e char.");
+    printf("Associe as variáveis aos ponteiros (use &). Modifique os valores de cada variável usando os ponteiros.");
+    printf("Imprima os valores das variáveis antes e após a modificação.\n");
+
+
+}
+
+int exercicio13() {
+    printf("Elaborar um programa que leia dois valores inteiros (A e B). Em seguida faça uma função que retorne a soma do dobro dos dois números lidos.");
+    printf("A função deverá armazenar o dobro de A na própria variável A e o dobro de B na própria variável B.");
+
+
+}
+
 int main(int argc, char* argv[]) {
 
     exercicio1();
@@ -188,6 +217,12 @@ int main(int argc, char* argv[]) {
     exercicio9();
 
     exercicio10();
+
+    exercicio11();
+
+    exercicio12();
+    
+    exercicio13();
 
     return 0;
 }
