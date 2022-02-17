@@ -73,7 +73,7 @@ int exercicio4() {
 	float porcentoNulo = (votoNulo/totalEleitores) * 100;
 	float porcentoValido = (votoValido/totalEleitores) * 100;
 
-	printf("Porcentagens: \nVotos Brancos: %f%%\nVotos Nulos: %f%%\nVotos Validos: %f%%\n", porcentoBranco, porcentoNulo, porcentoValido);
+	printf("Porcentagens: \nVotos Brancos: %.2f%%\nVotos Nulos: %.2f%%\nVotos Validos: %.2f%%\n", porcentoBranco, porcentoNulo, porcentoValido);
 }
 
 int exercicio5() {
