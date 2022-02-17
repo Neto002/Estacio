@@ -147,9 +147,7 @@ int exercicio8() {
 
 int exercicio9() {
     printf("Faça um programa em C que imprima de 1 a 50 na tela. \n");
-
-    int i = 1;
-    for (i = 1; i <= 50; i++) {
+    for (int i = 1; i <= 50; i++) {
         printf("%d\n", i);
     }
 }
