@@ -42,6 +42,8 @@ int exercicio3() {
 	printf("%d anos e quantos meses: ", idadeAnos);
 	scanf("%d", &idadeMeses);
 
+	printf("%d", idadeAnos);
+
 	printf("%d anos, %d meses e quantos dias: ", idadeAnos, idadeMeses);
 	scanf("%d", &idadeDias);
 
@@ -153,12 +155,17 @@ int exercicio9() {
 }
 
 int exercicio10() {
-    printf("\n");
+    printf("Elabore um código que imprima uma sequência de 1 até 100 somente com os números pares dessa sequência.\n");
+    for (int i = 1; i <= 100; i++) {
+        if (i%2==0) {
+            printf("%d", i);
+        }
+    }
 }
 
 int main(int argc, char *argv[]) {
 
-	exercicio1();
+	/*exercicio1();
 
     exercicio2();
 
@@ -176,7 +183,7 @@ int main(int argc, char *argv[]) {
 
 	exercicio9();
 
-	exercicio10();
-
+	exercicio10();*/
+    exercicio3();
 	return 0;
 }
