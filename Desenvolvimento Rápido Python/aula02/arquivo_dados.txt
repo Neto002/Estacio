@@ -1,0 +1,1 @@
+Este arquivos contém dados à serem lidos.

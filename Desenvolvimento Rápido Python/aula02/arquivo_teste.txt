@@ -1,0 +1,7 @@
+leitura de Linha 1 Python
+leitura de Linha 2 Python
+leitura de Linha 3 Python
+leitura de Linha 4 Python
+leitura de Linha 5 Python
+leitura de Linha 6 Python
+leitura de Linha 7 Python
