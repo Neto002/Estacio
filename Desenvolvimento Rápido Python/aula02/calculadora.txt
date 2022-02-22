@@ -1,0 +1,4 @@
+Soma: 4
+Subtração: 0
+Multiplicação: 4
+Divisão: 1.0

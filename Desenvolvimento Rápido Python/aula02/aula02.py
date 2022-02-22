@@ -22,4 +22,3 @@ with open("C:/Users/202102570735/Desktop/Estacio/Desenvolvimento Rápido Python/
 
 with open("C:/Users/202102570735/Desktop/Estacio/Desenvolvimento Rápido Python/aula02/arquivo_escrever.txt", 'r+') as f:
     print(texto)
-
