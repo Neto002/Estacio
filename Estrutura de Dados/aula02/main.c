@@ -30,11 +30,13 @@ int main()
 
     // return 0;
 
-    int a = 5;
-    int b = 6;
+    // int a = 5;
+    // int b = 6;
 
-    troca(&a, &b);
-    printf("a: %d  b: %d\n", a, b);
+    // troca(&a, &b);
+    // printf("a: %d  b: %d\n", a, b);
 
-    return 0;
+    // return 0;
+
+    
 }
