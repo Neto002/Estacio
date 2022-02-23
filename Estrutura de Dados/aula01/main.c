@@ -168,8 +168,14 @@ int exercicio10() {
 int exercicio11() {
     printf("Faca um programa que leia dois valores x e y inteiros do teclado e faca a troca do conteudo das variaveis usando funcao e ponteiro.\n");
 
+    void troca(int *x, int *y) {
+        int temp;
+        temp = *x;
+        *x = *y;
+        *y = temp;
+    }
+
     int x, y;
-    int *pt_x, *pt_y;
 
     printf("Digite um valor para x: ");
     scanf("%d", &x);
