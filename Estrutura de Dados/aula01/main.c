@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#pragma warning(disable : 4996)
-
 int exercicio1() {
     printf("Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor\n");
     int valor;
@@ -84,7 +82,7 @@ float calculaSalario(float salario, float reajuste) {
 }
 
 int exercicio5() {
-    printf("Escreva um algoritmo para ler o salario mensal atual de um funcionario e o percentual de reajuste. Calcular e escrever o valor do novo salario. Faca os calculos usando função.\n");
+    printf("Escreva um algoritmo para ler o salario mensal atual de um funcionario e o percentual de reajuste. Calcular e escrever o valor do novo salario. Faca os calculos usando funï¿½ï¿½o.\n");
     float salario;
     float percentualReajuste;
 
@@ -130,7 +128,7 @@ int exercicio7() {
 }
 
 int exercicio8() {
-    printf("Ler as notas da 1a. e 2a. avaliacoes de um aluno. Calcular a media aritmetica simples e escrever uma mensagem que diga se o aluno foi ou nao aprovado (considerar que nota igual ou maior que 6 o aluno e aprovado). Escrever também a media calculada.\n");
+    printf("Ler as notas da 1a. e 2a. avaliacoes de um aluno. Calcular a media aritmetica simples e escrever uma mensagem que diga se o aluno foi ou nao aprovado (considerar que nota igual ou maior que 6 o aluno e aprovado). Escrever tambï¿½m a media calculada.\n");
     float av1, av2, media;
 
     printf("Digite sua primeira nota: ");
@@ -168,7 +166,7 @@ int exercicio10() {
 }
 
 int exercicio11() {
-    printf("Faça um programa que leia dois valores x e y inteiros do teclado e faça a troca do conteúdo das variáveis usando função e ponteiro.\n");
+    printf("Faca um programa que leia dois valores x e y inteiros do teclado e faca a troca do conteudo das variaveis usando funcao e ponteiro.\n");
 
     int x, y;
     int *pt_x, *pt_y;
@@ -183,15 +181,15 @@ int exercicio11() {
 
 int exercicio12() {
     printf("Escreva um programa que declare um inteiro, um real e um char, e ponteiros para inteiro, real e char.");
-    printf("Associe as variáveis aos ponteiros (use &). Modifique os valores de cada variável usando os ponteiros.");
-    printf("Imprima os valores das variáveis antes e após a modificação.\n");
+    printf("Associe as variaveis aos ponteiros (use &). Modifique os valores de cada variavel usando os ponteiros.");
+    printf("Imprima os valores das variaveis antes e apos a modificacao.\n");
 
 
 }
 
 int exercicio13() {
-    printf("Elaborar um programa que leia dois valores inteiros (A e B). Em seguida faça uma função que retorne a soma do dobro dos dois números lidos.");
-    printf("A função deverá armazenar o dobro de A na própria variável A e o dobro de B na própria variável B.");
+    printf("Elaborar um programa que leia dois valores inteiros (A e B). Em seguida faca uma funcao que retorne a soma do dobro dos dois nï¿½meros lidos.");
+    printf("A funcao devera armazenar o dobro de A na propria variavel A e o dobro de B na propria variavel B.");
 
 
 }
