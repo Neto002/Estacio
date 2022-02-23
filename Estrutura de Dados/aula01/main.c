@@ -179,10 +179,11 @@ int exercicio11() {
 
     printf("Digite um valor para x: ");
     scanf("%d", &x);
-    pt_x = &x;
     printf("Digite um valor para y: ");
     scanf("%d", &y);
-    pt_y = &y;
+    troca(&x, &y);
+
+    printf("x = %d\ny = %d\n", x, y);
 }
 
 int exercicio12() {
@@ -190,14 +191,36 @@ int exercicio12() {
     printf("Associe as variaveis aos ponteiros (use &). Modifique os valores de cada variavel usando os ponteiros.");
     printf("Imprima os valores das variaveis antes e apos a modificacao.\n");
 
+    int a;
+    int *pa = &a;
+    float b;
+    float *pb = &b;
+    char c;
+    char *pc = &c;
+
+    printf("a = %d\nb = %f\nc = %c\n", *pa, *pb, *pc);
 
 }
 
 int exercicio13() {
-    printf("Elaborar um programa que leia dois valores inteiros (A e B). Em seguida faca uma funcao que retorne a soma do dobro dos dois n�meros lidos.");
-    printf("A funcao devera armazenar o dobro de A na propria variavel A e o dobro de B na propria variavel B.");
+    printf("Elaborar um programa que leia dois valores inteiros (A e B). Em seguida faca uma funcao que retorne a soma do dobro dos dois numeros lidos.");
+    printf("A funcao devera armazenar o dobro de A na propria variavel A e o dobro de B na propria variavel B.\n");
 
+    int a, b;
 
+    printf("Digite o valor de a: ");
+    scanf("%d", &a);
+    printf("Digite o valor de b: ");
+    scanf("%d", &b);
+
+    int somaDobro(int *a, int *b) {
+        *a *= 2;
+        *b *= 2;
+
+        return *a + *b;
+    }
+
+    printf("\nSoma do dobro dos valores: %d\n", somaDobro(&a, &b));
 }
 
 int main(int argc, char* argv[]) {
