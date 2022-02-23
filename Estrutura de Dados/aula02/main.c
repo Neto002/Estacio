@@ -35,4 +35,6 @@ int main()
 
     troca(&a, &b);
     printf("a: %d  b: %d\n", a, b);
+
+    return 0;
 }
