@@ -50,14 +50,14 @@ int main()
 
     // return 0;
 
-    int *pont;
+    // int *pont;
 
-    pont = malloc(sizeof(int));
+    // pont = malloc(sizeof(int));
 
-    printf("Endereco de ponteiro: %p\n", pont);
-    *pont = 90;
-    printf("Conteudo de ponteiro: %d\n", *pont);
-    free(pont);
+    // printf("Endereco de ponteiro: %p\n", pont);
+    // *pont = 90;
+    // printf("Conteudo de ponteiro: %d\n", *pont);
+    // free(pont);
 
-    return 0;
+    // return 0;
 }
