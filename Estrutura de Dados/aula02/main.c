@@ -38,15 +38,26 @@ int main()
 
     // return 0;
 
-    int x;
-    int *ptr;
-    x = 5;
-    ptr = &x;
-    printf("O valor da variavel x e: %d\n", *ptr);
+    // int x;
+    // int *ptr;
+    // x = 5;
+    // ptr = &x;
+    // printf("O valor da variavel x e: %d\n", *ptr);
 
-    *ptr = 10;
+    // *ptr = 10;
 
-    printf("Agora, X vale: %d\n", *ptr);
+    // printf("Agora, X vale: %d\n", *ptr);
+
+    // return 0;
+
+    int *pont;
+
+    pont = malloc(sizeof(int));
+
+    printf("Endereco de ponteiro: %p\n", pont);
+    *pont = 90;
+    printf("Conteudo de ponteiro: %d\n", *pont);
+    free(pont);
 
     return 0;
 }
