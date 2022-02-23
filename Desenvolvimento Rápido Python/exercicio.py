@@ -1,4 +1,5 @@
 import datetime
+
 # 1. Elabore um programa em Python que insere a tabuada de multiplicação de 9
 # em um arquivo txt.
 
