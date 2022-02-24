@@ -128,7 +128,7 @@ int exercicio7() {
 }
 
 int exercicio8() {
-    printf("Ler as notas da 1a. e 2a. avaliacoes de um aluno. Calcular a media aritmetica simples e escrever uma mensagem que diga se o aluno foi ou nao aprovado (considerar que nota igual ou maior que 6 o aluno e aprovado). Escrever tamb�m a media calculada.\n");
+    printf("Ler as notas da 1a. e 2a. avaliacoes de um aluno. Calcular a media aritmetica simples e escrever uma mensagem que diga se o aluno foi ou nao aprovado (considerar que nota igual ou maior que 6 o aluno e aprovado). Escrever também a media calculada.\n");
     float av1, av2, media;
 
     printf("Digite sua primeira nota: ");
