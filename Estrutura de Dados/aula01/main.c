@@ -226,29 +226,17 @@ int exercicio13() {
 int main(int argc, char* argv[]) {
 
     exercicio1();
-
     exercicio2();
-
     exercicio3();
-
     exercicio4();
-
     exercicio5();
-
     exercicio6();
-
     exercicio7();
-
     exercicio8();
-
     exercicio9();
-
     exercicio10();
-
     exercicio11();
-
-    exercicio12();
-    
+    exercicio12();    
     exercicio13();
 
     return 0;
