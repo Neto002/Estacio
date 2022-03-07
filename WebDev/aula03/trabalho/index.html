@@ -11,61 +11,61 @@
     <h2>Grupo: <br> Antonio Gomes Ferreira Neto <br> Lucas de França Carvalho <br> Matheus da Silva Laxe <br> Nayany Menegoi Nobre <br> Raphael Leonardo Monteiro de Oliveira</h2>
     <div>
         <form action="/action_page.php">
-        <fieldset>
-            <legend>Dados Cadastrais</legend>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
-            </div>
-            <br>
-            <div>
-                <label for="sexo">Sexo:</label>
-                <select name="sexo" id="sexo">
-                    <option value="0" selected>Selecione o sexo</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Feminino</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="text" name="email" id="email" placeholder="Digite seu e-mail"/>
-            </div>
-            <br>
-            <div>
-                <label for="dtChegada">Data de Chegada:</laaabel>
-                <input type="text" name="dtChegada" id="dtChegada" placeholder="dd/mm/aaa"/>
-            </div>
-            <br>
-            <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+            <fieldset>
+                <legend>Dados Cadastrais</legend>
                 <div>
-                    <label for="a">Número de Noites:</label>
-                    <input type="range" id="a" value="1"/>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
+                </div>
+                <br>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="0" selected>Selecione o sexo</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail"/>
+                </div>
+                <br>
+                <div>
+                    <label for="dtChegada">Data de Chegada:</laaabel>
+                    <input type="text" name="dtChegada" id="dtChegada" placeholder="dd/mm/aaa"/>
+                </div>
+                <br>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
                     <br>
+                    <textarea name="mensagem" id=mensagem rows="8" cols="40"></textarea>
                 </div>
-                <br>
-                <div>
-                    <label for="b">Número de Hóspedes:</label>
-                    <input type="number" value="1" id="b" placeholder="Digite o número de hóspedes"/>
-                </div>
-                <br>
-                <div>
-                    <label for="result">Valor Estimado:</label>
-                    R$<output id="result" for="a b">0</output>
-                </div>
-                <br>
-            </form>
+            </fieldset>
+        </form>
+        <form oninput="result.value = 100*(parseFloat(a.value)) + 3*(parseFloat(b.value))">
+            <br>
             <div>
-                <label for="mensagem">Mensagem:</label>
+                <label for="a">Número de Noites:</label>
+                <input type="number" id="a" value="0"/>
                 <br>
-                <textarea name="mensagem" id=mensagem rows="8" cols="40"></textarea>
             </div>
             <br>
             <div>
-                <input type="submit" value="Enviar">
+                <label for="b">Número de Hóspedes:</label>
+                <input type="number" value="0" id="b" placeholder="Digite o número de hóspedes"/>
             </div>
-        </fieldset>
+            <br>
+            <div>
+                <label for="result">Valor Estimado:</label>
+                R$<output id="result" for="a b">0</output>
+            </div>
+            <br>
         </form>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
     </div>
 </body>
 </html>
