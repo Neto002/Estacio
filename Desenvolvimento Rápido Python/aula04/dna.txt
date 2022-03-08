@@ -1,2 +1,2 @@
-AATCTGCAC
-CACGTCTAA
+Cadeia normal: DNA
+Cadeia invertida: AND
