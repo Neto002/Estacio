@@ -91,10 +91,35 @@ void exercicio4() {
 }
 
 void exercicio5() {
+    printf("Escreva um programa que leia 10 números inteiros e os armazene em um vetor. Imprima o vetor, o maior elemento e a posição que ele");
+    printf(" se encontra.\n");
     
+    int *vetor;
+    vetor = (int*)malloc(sizeof(int)*10);
+    
+    int maior = 0;
+    int indexMaior = 0;
+    
+    for (int i = 0; i < 10; i++) {
+        printf("Digite um valor: ");
+        scanf("%d", &vetor[i]);
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+            indexMaior = i;
+        }
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        printf("Valor da posicao %d do vetor: %d\n", i, vetor[i]);
+    }
+    
+    printf("O maior valor do vetor e %d, ocupando a posicao %d\n", maior, indexMaior);
 }
 
 void exercicio6() {
+    printf("Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números");
+    printf(" negativos e a soma dos números positivos desse vetor.\n");
+    
     
 }
 
@@ -135,8 +160,8 @@ int main()
     //exercicio1();
     //exercicio2();
     //exercicio3();
-    exercicio4();
-    exercicio5();
+    //exercicio4();
+    //exercicio5();
     exercicio6();
     exercicio7();
     exercicio8();
