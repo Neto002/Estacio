@@ -120,11 +120,45 @@ void exercicio6() {
     printf("Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números");
     printf(" negativos e a soma dos números positivos desse vetor.\n");
     
+    float *vetor;
+    vetor = (float*)malloc(sizeof(float)*10);
     
+    int qtdNegativo = 0;
+    int somaPositivo = 0;
+    
+    for (int i = 0; i < 10; i++) {
+        printf("Digite um valor: ");
+        scanf("%f", &vetor[i]);
+        if (vetor[i] < 0) {
+            qtdNegativo++;
+        }
+        if (vetor[i] > 0) {
+            somaPositivo += vetor[i];
+        }
+    }
+    
+    printf("Quantidade de valores negativos: %d\nSoma dos valores positivos: %d\n", qtdNegativo, somaPositivo);
 }
 
 void exercicio7() {
+    printf("Faça um programa que leia um vetor de 10 números. Leia um número 𝑥. Conte os múltiplo de 𝑥 do vetor e mostre-os na tela.\n");
     
+    int *vetor;
+    vetor = (int*)malloc(sizeof(int)*10);
+    
+    int x;
+    
+    printf("Digite um valor a ser comparado: ");
+    scanf("%d", &x);
+    
+    for (int i = 0; i < 10; i++) {
+        printf("Digite um valor: ");
+        scanf("%d", &vetor[i]);
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        
+    }
 }
 
 void exercicio8() {
@@ -155,6 +189,42 @@ void exercicio14() {
     
 }
 
+void exercicio15() {
+    
+}
+
+void exercicio16() {
+    
+}
+
+void exercicio17() {
+    
+}
+
+void exercicio18() {
+    
+}
+
+void exercicio19() {
+    
+}
+
+void exercicio20() {
+    
+}
+
+void exercicio21() {
+    
+}
+
+void exercicio22() {
+    
+}
+
+void exercicio23() {
+    
+}
+
 int main()
 {
     //exercicio1();
@@ -162,7 +232,7 @@ int main()
     //exercicio3();
     //exercicio4();
     //exercicio5();
-    exercicio6();
+    //exercicio6();
     exercicio7();
     exercicio8();
     exercicio9();
