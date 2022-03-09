@@ -157,7 +157,9 @@ void exercicio7() {
     }
     
     for (int i = 0; i < 10; i++) {
-        
+        if (vetor[i] % x == 0) {
+            printf("O valor %d e multiplo de %d\n", vetor[i], x);   
+        }
     }
 }
 
@@ -233,7 +235,7 @@ int main()
     //exercicio4();
     //exercicio5();
     //exercicio6();
-    exercicio7();
+    //exercicio7();
     exercicio8();
     exercicio9();
     exercicio10();
