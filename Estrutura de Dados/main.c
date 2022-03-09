@@ -19,9 +19,27 @@ void exercicio2() {
     printf("Ler um conjunto de números reais, armazenando-o em vetor e calcular o quadrado das componentes deste vetor,");
     printf(" armazenando o resultado em outro vetor. Os conjuntos possuem 10 elementos cada. Imprimir todos os conjuntos.\n");
     
+    float vetor[10], vetorQuadrado[10];
+    
+    for (int i = 0; i < 10; i++) {
+        printf("Digite um numero: ");
+        scanf("%f", &vetor[i]);
+        vetorQuadrado[i] = vetor[i]*vetor[i];
+    }
+    
+    printf("Valores do primeiro vetor: ") ;  
+    for (int i = 0; i < 10; i++) {
+        printf("%.1f, ", vetor[i]);
+    }
+    
+    printf("\nValores do segundo vetor: ");
+    for (int i = 0; i < 10; i++) {
+        printf("%.1f, ", vetorQuadrado[i]);
+    }
 }
 
 void exercicio3() {
+    printf("\nLeia um vetor de 10 posições. Contar e escrever quantos valores pares ele possui.\n");
     
 }
 
@@ -71,8 +89,8 @@ void exercicio14() {
 
 int main()
 {
-    exercicio1();
-    exercicio2();
+    //exercicio1();
+    //exercicio2();
     exercicio3();
     exercicio4();
     exercicio5();
