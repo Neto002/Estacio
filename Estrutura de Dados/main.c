@@ -232,7 +232,33 @@ void exercicio14() {
 }
 
 void exercicio15() {
+    printf("Leia uma matriz 3 x 3. Leia também um valor X. O programa deverá fazer uma busca desse valor na matriz e, ao final, escrever a ");
+    printf("localização (linha e coluna) ou uma mensagem de “não encontrado”.\n");
     
+    int matriz[3][3];
+    int x;
+    int linhaX, colunaX;
+    
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    
+    printf("Digite um valor para buscar na matriz: ");
+    scanf("%d", &x);
+    
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (matriz[i][j] == x) {
+                linhaX = i;
+                colunaX = j;
+            } else {
+                printf("Valor não encontrado\n");
+            }
+        }
+    }
 }
 
 void exercicio16() {
@@ -277,12 +303,13 @@ int main()
     //exercicio6();
     //exercicio7();
     //exercicio8();
-    exercicio9();
+    //exercicio9();
     exercicio10();
     exercicio11();
     exercicio12();
     exercicio13();
     exercicio14();
+    exercicio15();
 
     return 0;
 }
