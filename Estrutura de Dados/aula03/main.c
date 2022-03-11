@@ -325,20 +325,85 @@ void exercicio12() {
 }
 
 void exercicio13() {
+    printf("Declare uma matriz 5 x 5. Preencha com 1 a diagonal principal e com 0 os demais elementos. Escreva ao final a matriz obtida.\n");
+
+    int matriz[5][5];
+
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            if (i==j)
+            {
+                matriz[i][j] = 1;
+            } else
+            {
+                matriz[i][j] = 0;
+            }
+        }
+    }
     
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
 }
 
 void exercicio14() {
-    
+    printf("Leia uma matriz 4 x 4, imprima a matriz e retorne a localizacao (linha e a coluna) do maior valor.\n");
+
+    int matriz[4][4];
+    int linhaMaior, colunaMaior, maior = 0;
+
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            printf("Digite o termo para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz[i][j]);
+
+            if (i==0) {
+                maior = matriz[i][j];
+                linhaMaior = 0;
+                colunaMaior = 0;
+            } else {
+                if (matriz[i][j] > maior) {
+                    maior = matriz[i][j];
+                    linhaMaior = i;
+                    colunaMaior = j;
+                }
+            }
+        }
+    }
+
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (matriz[i][j] >= 10) {
+                printf("%d ", matriz[i][j]);
+            } else {
+                printf("%d  ", matriz[i][j]);
+            }
+        }
+        printf("\n");
+    }
+
+    printf("O maior valor da matriz e o numero %d, que se encontra na linha %d coluna %d.\n", maior, linhaMaior, colunaMaior);
 }
 
 void exercicio15() {
-    printf("Leia uma matriz 3 x 3. Leia também um valor X. O programa deverá fazer uma busca desse valor na matriz e, ao final, escrever a ");
-    printf("localização (linha e coluna) ou uma mensagem de “não encontrado”.\n");
+    printf("Leia uma matriz 3 x 3. Leia tambem um valor X. O programa devera fazer uma busca desse valor na matriz e, ao final, escrever a ");
+    printf("localizacao (linha e coluna) ou uma mensagem de “nao encontrado”.\n");
     
     int matriz[3][3];
     int x;
     int linhaX, colunaX;
+    int achouX = 0;
     
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -355,10 +420,15 @@ void exercicio15() {
             if (matriz[i][j] == x) {
                 linhaX = i;
                 colunaX = j;
-            } else {
-                printf("Valor não encontrado\n");
+                achouX = 1;
             }
         }
+    }
+
+    if (!achouX) {
+        printf("Valor nao encontrado na matriz.\n");
+    } else {
+        printf("O valor %d foi encontrado na linha %d e coluna %d.\n", x, linhaX, colunaX);
     }
 }
 
@@ -408,9 +478,9 @@ int main()
     //exercicio10();
     //exercicio11();
     //exercicio12();
-    exercicio13();
-    exercicio14();
-    //exercicio15();
+    //exercicio13();
+    //exercicio14();
+    exercicio15();
     exercicio16();
     exercicio17();
     exercicio18();
