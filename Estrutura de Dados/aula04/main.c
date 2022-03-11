@@ -235,6 +235,7 @@ void exercicio10() {
         }
     }
 
+    printf("Vetor: ");
     for (int i = 0; i < 5; i++)
     {
         printf("%d ", vetor[i]);
@@ -243,7 +244,61 @@ void exercicio10() {
 }
 
 void exercicio11() {
+    printf("\nDesenvolva um codigo em C que leia dois vetores inteiros de tamanho iguais e calcule a distancia de Hamming. A distancia de Hamming e dada peloo numero de posicoes nas quais elas diferem entre si. Exemplo: 1011 e 1111 possuem distancia de Hamming 1 pois se diferem em apenas 1 posicao.\n");
+
+    int *vetor1, *vetor2;
+    vetor1 = (int*)malloc(sizeof(int)*5);
+    vetor2 = (int*)malloc(sizeof(int)*5);
+
+    int distanciaHamming = 0;
+    int aux = 0;
+
+    printf("----------Coleta de Dados do Vetor 1-----------\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Digite um valor: ");
+        scanf("%d", &vetor1[i]);
+    }
+    printf("----------Coleta de Dados do Vetor 2-----------\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Digite um valor: ");
+        scanf("%d", &vetor2[i]);
+    }
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = i+1; j < 5; j++) {
+            if (vetor1[j] < vetor1[i]) {
+                aux = vetor1[i];
+                vetor1[i] = vetor1[j];
+                vetor1[j] = aux;
+            }
+            if (vetor2[j] < vetor2[i]) {
+                aux = vetor2[i];
+                vetor2[i] = vetor2[j];
+                vetor2[j] = aux;
+            }
+        }
+    }
+
+    printf("Vetor 1:\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", vetor1[i]);
+    }
     
+    printf("\nVetor 2:\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", vetor2[i]);
+    }
+
+    for (int i = 0; i < 5; i++) {
+        if (vetor1[i] != vetor2[i]) {
+            distanciaHamming++;
+        }
+    }
+    
+
+    printf("\nA distancia de Hamming entre os dois vetores e de %d posicoes.", distanciaHamming);
 }
 
 void exercicio12() {
@@ -331,7 +386,7 @@ int main()
     //exercicio7();
     //exercicio8();
     //exercicio9();
-    exercicio10();
+    //exercicio10();
     exercicio11();
     exercicio12();
     exercicio13();
