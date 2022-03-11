@@ -570,6 +570,36 @@ void exercicioR() {
 
 void exercicioS() {
     printf("Elabore um programa que tendo duas matrizes 3X3, imprima a soma dessas matrizes.\n");
+
+    int matrizA[3][3], matrizB[3][3], matrizC[3][3];
+
+    printf("----------Coleta de dados Matriz A----------\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matrizA[i][j]);
+        }
+    }
+
+    printf("----------Coleta de dados Matriz B----------\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matrizB[i][j]);
+        }
+    }
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
+            if (matrizC[i][j] >= 10) {
+                printf("%d ", matrizC[i][j]);
+            } else {
+                printf("%d  ", matrizC[i][j]);
+            }
+        }
+        printf("\n");
+    }
 }
 
 void exercicioT() {
@@ -610,9 +640,9 @@ int main()
     // exercicioO();
     // exercicioP();
     // exercicioQ();
-    exercicioR();
+    // exercicioR();
     // exercicioS();
-    // exercicioT();
+    exercicioT();
     // exercicioU();
     // exercicioV();
     // exercicioW();
