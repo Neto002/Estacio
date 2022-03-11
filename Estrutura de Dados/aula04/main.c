@@ -298,11 +298,30 @@ void exercicio11() {
     }
     
 
-    printf("\nA distancia de Hamming entre os dois vetores e de %d posicoes.", distanciaHamming);
+    printf("\nA distancia de Hamming entre os dois vetores e de %d posicoes.\n", distanciaHamming);
 }
 
 void exercicio12() {
+    printf("Leia uma matriz 4 x 4, conte e escreva quantos valores maiores que 10 ela possui.\n");
+
+    int matriz[4][4];
+    int qtd = 0;
+
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            printf("Digite o termo para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz[i][j]);
+            if (matriz[i][j] > 10)
+            {
+                qtd++;
+            }
+            
+        }
+    }
     
+    printf("A matriz tem %d valores maiores que 10.\n", qtd);
 }
 
 void exercicio13() {
@@ -387,8 +406,8 @@ int main()
     //exercicio8();
     //exercicio9();
     //exercicio10();
-    exercicio11();
-    exercicio12();
+    //exercicio11();
+    //exercicio12();
     exercicio13();
     exercicio14();
     //exercicio15();
