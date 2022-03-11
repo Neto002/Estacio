@@ -481,31 +481,72 @@ void exercicioP() {
 }
 
 void exercicioQ() {
-    
+    printf("Leia uma matriz de 3 x 3 elementos. Calcule a soma dos elementos que estao acima da diagonal principal, abaixo da diagonal principal e os que estão na diagonal principal. Imprima os três resultados.\n");
+
+    /*
+        Parte de cima: [0][1], [0][2], [1][2]
+        Parte de baixo: [1][0], [2][0], [2][1]
+    */
+
+    int matriz[3][3];
+    int somaCima = 0, somaBaixo = 0, somaDiagonal = 0;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz[i][j]);
+
+            if (i == 0 && j == 1 || i == 0 && j == 2 || i == 1 && j == 2) {
+                somaCima+= matriz[i][j];
+            } else if (i == 1 && j == 0 || i == 2 && j == 0 || i == 2 && j == 1) {
+                somaBaixo += matriz[i][j];
+            } else if (i == j) {
+                somaDiagonal += matriz[i][j];
+            }
+        }
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (matriz[i][j] >= 10) {
+                printf("%d ", matriz[i][j]);
+            } else {
+                printf("%d  ", matriz[i][j]);
+            }
+        }
+        printf("\n");
+    }
+
+    printf("Soma da parte acima da diagonal: %d\nSoma da parte abaixo da diagonal: %d\nSoma da diagonal: %d\n", somaCima, somaBaixo, somaDiagonal);
 }
 
 void exercicioR() {
-    
+    printf("Faça um programa que leia duas matrizes A e B de tamanho 3 x 3 e calcule C = A * B.\n");
 }
 
 void exercicioS() {
-    
+    printf("Elabore um programa que tendo duas matrizes 3X3, imprima a soma dessas matrizes.\n");
 }
 
 void exercicioT() {
-    
+    printf("Leia uma matriz 3X3 do teclado, calcule e imprima a sua matriz transposta.\n");
 }
 
 void exercicioU() {
-    
+    printf("Faca um programa que leia uma matriz 4X4 e imprima a media aritmetica dos numeros das linhas e das colunas dessa matriz.\n");
 }
 
 void exercicioV() {
-    
+    printf("Gerar e imprimir uma matriz de tamanho 4 x 14, onde seus elementos sao da forma:\n");
+    printf("a. A[i][j] = 2i + 7j - 2, se i < j\n");
+    printf("b. A[i][j] = 3i2- 1, se i = j\n");
+    printf("c. A[i][j] = 4i3- 5j² +1, se i > j.\n");
 }
 
 void exercicioW() {
-    
+    printf("Ler uma matriz de dimensoes especificadas pelo usuario e imprima a soma das linhas e colunas dessa matriz.\n");
 }
 
 int main()
@@ -527,12 +568,12 @@ int main()
     // exercicioO();
     // exercicioP();
     exercicioQ();
-    exercicioR();
-    exercicioS();
-    exercicioT();
-    exercicioU();
-    exercicioV();
-    exercicioW();
+    // exercicioR();
+    // exercicioS();
+    // exercicioT();
+    // exercicioU();
+    // exercicioV();
+    // exercicioW();
 
     return 0;
 }
