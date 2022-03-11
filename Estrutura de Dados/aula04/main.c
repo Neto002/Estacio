@@ -117,8 +117,8 @@ void exercicio5() {
 }
 
 void exercicio6() {
-    printf("Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números");
-    printf(" negativos e a soma dos números positivos desse vetor.\n");
+    printf("Faca um programa que preencha um vetor com 10 numeros reais, calcule e mostre a quantidade de numeros");
+    printf(" negativos e a soma dos numeros positivos desse vetor.\n");
     
     float *vetor;
     vetor = (float*)malloc(sizeof(float)*10);
@@ -141,7 +141,7 @@ void exercicio6() {
 }
 
 void exercicio7() {
-    printf("Faça um programa que leia um vetor de 10 números. Leia um número 𝑥. Conte os múltiplo de 𝑥 do vetor e mostre-os na tela.\n");
+    printf("Faca um programa que leia um vetor de 10 numeros. Leia um numero x. Conte os multiplos de x do vetor e mostre-os na tela.\n");
     
     int *vetor;
     vetor = (int*)malloc(sizeof(int)*10);
@@ -164,7 +164,7 @@ void exercicio7() {
 }
 
 void exercicio8() {
-    printf("Faca um vetor de tamanho 10 preenchido com o seguinte valor: (i + 5 ∗ i) ∗ (i + 1), sendo i posicao do elemento no vetor."); 
+    printf("Faca um vetor de tamanho 10 preenchido com o seguinte valor: (i + 5 * i) * (i + 1), sendo i posicao do elemento no vetor."); 
     printf("Em seguida imprima o vetor na tela.\n");
     
     int *vetor;
@@ -180,9 +180,9 @@ void exercicio8() {
 }
 
 void exercicio9() {
-    printf("Faça um programa que leia um vetor de 5 posições para números reais e, depois, um código inteiro. Se o código for zero,"); 
+    printf("Faca um programa que leia um vetor de 5 posicoes para numeros reais e, depois, um codigo inteiro. Se o codigo for zero,"); 
     printf(" finalize o programa; se for 1, mostre o vetor na ordem em que foi preenchido; se for 2, mostre o vetor na ordem inversa.");
-    printf(" Caso, o código for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.\n");
+    printf(" Caso o codigo for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.\n");
     
     float *vetor;
     vetor = (float*)malloc(sizeof(float)*5);
@@ -198,6 +198,7 @@ void exercicio9() {
     scanf("%d", &codigo);
     
     if (codigo == 0) {
+        printf("Finalizando programa...\n");
         exit;
     } else if (codigo == 1) {
         printf("Vetor na ordem preenchida: ");
@@ -208,10 +209,36 @@ void exercicio9() {
         for (int i = 4; i >= 0; i--) {
             printf("%.1f, ", vetor[i]);
         }
+    } else {
+        printf("Codigo invalido.\n");
     }
 }
 
 void exercicio10() {
+    printf("Elabore um algoritmo em linguagem C que ordene os elementos de um vetor da forma crescente.\n");
+
+    int *vetor, aux;
+    vetor = (int*)malloc(sizeof(int)*5);
+
+    for (int i = 0; i < 5; i++) {
+        printf("Digite um valor: ");
+        scanf("%d", &vetor[i]);
+    }
+    
+    for (int i = 0; i < 5; i++) {
+        for (int j = i+1; j < 5; j++) {
+            if (vetor[j] < vetor[i]) {
+                aux = vetor[i];
+                vetor[i] = vetor[j];
+                vetor[j] = aux;
+            }
+        }
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", vetor[i]);
+    }
     
 }
 
@@ -303,13 +330,21 @@ int main()
     //exercicio6();
     //exercicio7();
     //exercicio8();
-    exercicio9();
+    //exercicio9();
     exercicio10();
     exercicio11();
     exercicio12();
     exercicio13();
     exercicio14();
     //exercicio15();
+    exercicio16();
+    exercicio17();
+    exercicio18();
+    exercicio19();
+    exercicio20();
+    exercicio21();
+    exercicio22();
+    exercicio23();
 
     return 0;
 }
