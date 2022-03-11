@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void exercicio1() {
+void exercicioA() {
     printf("Crie um programa que le 10 valores inteiros, insere em um vetor e mostre na tela os valores lidos.\n");
     
     int *vetor;
@@ -17,7 +17,7 @@ void exercicio1() {
     }
 }
 
-void exercicio2() {
+void exercicioB() {
     printf("Ler um conjunto de números reais, armazenando-o em vetor e calcular o quadrado das componentes deste vetor,");
     printf(" armazenando o resultado em outro vetor. Os conjuntos possuem 10 elementos cada. Imprimir todos os conjuntos.\n");
     
@@ -42,7 +42,7 @@ void exercicio2() {
     }
 }
 
-void exercicio3() {
+void exercicioC() {
     printf("\nLeia um vetor de 10 posicoes. Contar e escrever quantos valores pares ele possui.\n");
     
     int *vetor;
@@ -62,7 +62,7 @@ void exercicio3() {
     printf("\nO vetor tem %d valores pares.\n", qtdPar);
 }
 
-void exercicio4() {
+void exercicioD() {
     printf("Faça um programa que receba do usuário um vetor com 10 posições. Em seguida deverá ser impresso o maior e o menor elemento do vetor.\n");
     
     int *vetor;
@@ -90,7 +90,7 @@ void exercicio4() {
     printf("O menor valor do vetor e: %d\n", menor);
 }
 
-void exercicio5() {
+void exercicioE() {
     printf("Escreva um programa que leia 10 números inteiros e os armazene em um vetor. Imprima o vetor, o maior elemento e a posição que ele");
     printf(" se encontra.\n");
     
@@ -116,7 +116,7 @@ void exercicio5() {
     printf("O maior valor do vetor e %d, ocupando a posicao %d\n", maior, indexMaior);
 }
 
-void exercicio6() {
+void exercicioF() {
     printf("Faca um programa que preencha um vetor com 10 numeros reais, calcule e mostre a quantidade de numeros");
     printf(" negativos e a soma dos numeros positivos desse vetor.\n");
     
@@ -140,7 +140,7 @@ void exercicio6() {
     printf("Quantidade de valores negativos: %d\nSoma dos valores positivos: %d\n", qtdNegativo, somaPositivo);
 }
 
-void exercicio7() {
+void exercicioG() {
     printf("Faca um programa que leia um vetor de 10 numeros. Leia um numero x. Conte os multiplos de x do vetor e mostre-os na tela.\n");
     
     int *vetor;
@@ -163,7 +163,7 @@ void exercicio7() {
     }
 }
 
-void exercicio8() {
+void exercicioH() {
     printf("Faca um vetor de tamanho 10 preenchido com o seguinte valor: (i + 5 * i) * (i + 1), sendo i posicao do elemento no vetor."); 
     printf("Em seguida imprima o vetor na tela.\n");
     
@@ -179,7 +179,7 @@ void exercicio8() {
     }
 }
 
-void exercicio9() {
+void exercicioI() {
     printf("Faca um programa que leia um vetor de 5 posicoes para numeros reais e, depois, um codigo inteiro. Se o codigo for zero,"); 
     printf(" finalize o programa; se for 1, mostre o vetor na ordem em que foi preenchido; se for 2, mostre o vetor na ordem inversa.");
     printf(" Caso o codigo for diferente de 1 e 2 escreva uma mensagem informando que o código é inválido.\n");
@@ -214,7 +214,7 @@ void exercicio9() {
     }
 }
 
-void exercicio10() {
+void exercicioJ() {
     printf("Elabore um algoritmo em linguagem C que ordene os elementos de um vetor da forma crescente.\n");
 
     int *vetor, aux;
@@ -243,7 +243,7 @@ void exercicio10() {
     
 }
 
-void exercicio11() {
+void exercicioK() {
     printf("\nDesenvolva um codigo em C que leia dois vetores inteiros de tamanho iguais e calcule a distancia de Hamming. A distancia de Hamming e dada peloo numero de posicoes nas quais elas diferem entre si. Exemplo: 1011 e 1111 possuem distancia de Hamming 1 pois se diferem em apenas 1 posicao.\n");
 
     int *vetor1, *vetor2;
@@ -301,7 +301,7 @@ void exercicio11() {
     printf("\nA distancia de Hamming entre os dois vetores e de %d posicoes.\n", distanciaHamming);
 }
 
-void exercicio12() {
+void exercicioL() {
     printf("Leia uma matriz 4 x 4, conte e escreva quantos valores maiores que 10 ela possui.\n");
 
     int matriz[4][4];
@@ -324,7 +324,7 @@ void exercicio12() {
     printf("A matriz tem %d valores maiores que 10.\n", qtd);
 }
 
-void exercicio13() {
+void exercicioM() {
     printf("Declare uma matriz 5 x 5. Preencha com 1 a diagonal principal e com 0 os demais elementos. Escreva ao final a matriz obtida.\n");
 
     int matriz[5][5];
@@ -353,7 +353,7 @@ void exercicio13() {
     }
 }
 
-void exercicio14() {
+void exercicioN() {
     printf("Leia uma matriz 4 x 4, imprima a matriz e retorne a localizacao (linha e a coluna) do maior valor.\n");
 
     int matriz[4][4];
@@ -396,7 +396,7 @@ void exercicio14() {
     printf("O maior valor da matriz e o numero %d, que se encontra na linha %d coluna %d.\n", maior, linhaMaior, colunaMaior);
 }
 
-void exercicio15() {
+void exercicioO() {
     printf("Leia uma matriz 3 x 3. Leia tambem um valor X. O programa devera fazer uma busca desse valor na matriz e, ao final, escrever a ");
     printf("localizacao (linha e coluna) ou uma mensagem de “nao encontrado”.\n");
     
@@ -432,63 +432,107 @@ void exercicio15() {
     }
 }
 
-void exercicio16() {
+void exercicioP() {
+    printf("Leia duas matrizes 4 x 4 e escreva uma terceira com os maiores valores de cada posicao das matrizes lidas. Ler um valor e escrever se e positivo ou negativo (considere o valor zero como positivo).\n");
+
+    int matriz1[4][4], matriz2[4][4], matrizMaiores[4][4];
+    int maior = 0;
+
+    printf("----------Coleta de dados Matriz 1----------\n");
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz1[i][j]);
+        }
+    }
+
+    printf("----------Coleta de dados Matriz 2----------\n");
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz2[i][j]);
+        }
+    }
+
+    printf("----------Matriz com os maiores valores de cada posicao----------\n");
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            if (matriz1[i][j] > matriz2[i][j]) {
+                matrizMaiores[i][j] = matriz1[i][j];
+            } else {
+                matrizMaiores[i][j] = matriz2[i][j];
+            }
+
+            if (matrizMaiores[i][j] >= 10) {
+                printf("%d ", matrizMaiores[i][j]);
+            } else {
+                printf("%d  ", matrizMaiores[i][j]);
+            }
+        }
+        printf("\n");
+    }
     
 }
 
-void exercicio17() {
+void exercicioQ() {
     
 }
 
-void exercicio18() {
+void exercicioR() {
     
 }
 
-void exercicio19() {
+void exercicioS() {
     
 }
 
-void exercicio20() {
+void exercicioT() {
     
 }
 
-void exercicio21() {
+void exercicioU() {
     
 }
 
-void exercicio22() {
+void exercicioV() {
     
 }
 
-void exercicio23() {
+void exercicioW() {
     
 }
 
 int main()
 {
-    //exercicio1();
-    //exercicio2();
-    //exercicio3();
-    //exercicio4();
-    //exercicio5();
-    //exercicio6();
-    //exercicio7();
-    //exercicio8();
-    //exercicio9();
-    //exercicio10();
-    //exercicio11();
-    //exercicio12();
-    //exercicio13();
-    //exercicio14();
-    exercicio15();
-    exercicio16();
-    exercicio17();
-    exercicio18();
-    exercicio19();
-    exercicio20();
-    exercicio21();
-    exercicio22();
-    exercicio23();
+    // exercicioA();
+    // exercicioB();
+    // exercicioC();
+    // exercicioD();
+    // exercicioE();
+    // exercicioF();
+    // exercicioG();
+    // exercicioH();
+    // exercicioI();
+    // exercicioJ();
+    // exercicioK();
+    // exercicioL();
+    // exercicioM();
+    // exercicioN();
+    // exercicioO();
+    // exercicioP();
+    exercicioQ();
+    exercicioR();
+    exercicioS();
+    exercicioT();
+    exercicioU();
+    exercicioV();
+    exercicioW();
 
     return 0;
 }
