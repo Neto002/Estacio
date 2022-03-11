@@ -303,13 +303,13 @@ int main()
     //exercicio6();
     //exercicio7();
     //exercicio8();
-    //exercicio9();
+    exercicio9();
     exercicio10();
     exercicio11();
     exercicio12();
     exercicio13();
     exercicio14();
-    exercicio15();
+    //exercicio15();
 
     return 0;
 }
