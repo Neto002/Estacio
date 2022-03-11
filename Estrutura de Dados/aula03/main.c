@@ -523,7 +523,49 @@ void exercicioQ() {
 }
 
 void exercicioR() {
-    printf("Faça um programa que leia duas matrizes A e B de tamanho 3 x 3 e calcule C = A * B.\n");
+    printf("Faca um programa que leia duas matrizes A e B de tamanho 3 x 3 e calcule C = A * B.\n");
+
+    int matrizA[3][3], matrizB[3][3], matrizC[3][3];
+    int somaProduto = 0;
+
+    printf("----------Coleta de dados Matriz A----------\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matrizA[i][j]);
+        }
+    }
+
+    printf("----------Coleta de dados Matriz B----------\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matrizB[i][j]);
+        }
+    }
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            somaProduto = 0;
+            for (int aux = 0; aux < 3; aux++) {
+                somaProduto += matrizA[i][aux] * matrizB[aux][j];
+                matrizC[i][j] = somaProduto;
+            }
+        }
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (matrizC[i][j] >= 10) {
+                printf("%d ", matrizC[i][j]);
+            } else {
+                printf("%d  ", matrizC[i][j]);
+            }
+        }
+        printf("\n");
+    }
 }
 
 void exercicioS() {
@@ -567,8 +609,8 @@ int main()
     // exercicioN();
     // exercicioO();
     // exercicioP();
-    exercicioQ();
-    // exercicioR();
+    // exercicioQ();
+    exercicioR();
     // exercicioS();
     // exercicioT();
     // exercicioU();
