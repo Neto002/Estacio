@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
+html {
+    background-color: rgba(124, 58, 185, 0.452);
+}
+
 h1 {
     text-align: center;
 }
+
 p#paragrafo {
     color: red;
+    font-weight: bold;
 }
