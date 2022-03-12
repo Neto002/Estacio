@@ -7,6 +7,40 @@
     <title>Fale Conosco</title>
 </head>
 <body>
-    
+    <h1>Fale Conosco</h1>
+    <br>
+    <div id="formulario">
+        <form action="">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            
+            <div>
+                <label for="sexo">Sexo:</label>
+                <select id="sexo">
+                    <option value="0" selected>Selecione seu sexo</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                    <option value="3">Prefiro não dizer</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <br>
+                <textarea id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
