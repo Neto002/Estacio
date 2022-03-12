@@ -1,1 +1,19 @@
 @charset "UTF-8";
+
+body{
+    background-color:#C0D9D9;
+}
+
+h1{
+    font-style:Italic;
+    color:#000090;
+}
+
+h2{
+    font-style:Italic;
+    color:#000090;
+}
+
+p{
+    color:#333333;
+}
