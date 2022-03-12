@@ -778,29 +778,29 @@ void exercicioW() {
 
 int main()
 {
-    // exercicioA();
-    // exercicioB();
-    // exercicioC();
-    // exercicioD();
-    // exercicioE();
-    // exercicioF();
-    // exercicioG();
-    // exercicioH();
-    // exercicioI();
-    // exercicioJ();
-    // exercicioK();
-    // exercicioL();
-    // exercicioM();
-    // exercicioN();
-    // exercicioO();
-    // exercicioP();
-    // exercicioQ();
-    // exercicioR();
-    // exercicioS();
-    // exercicioT();
-    // exercicioU();
+    exercicioA();
+    exercicioB();
+    exercicioC();
+    exercicioD();
+    exercicioE();
+    exercicioF();
+    exercicioG();
+    exercicioH();
+    exercicioI();
+    exercicioJ();
+    exercicioK();
+    exercicioL();
+    exercicioM();
+    exercicioN();
+    exercicioO();
+    exercicioP();
+    exercicioQ();
+    exercicioR();
+    exercicioS();
+    exercicioT();
+    exercicioU();
     exercicioV();
-    // exercicioW();
+    exercicioW();
 
     return 0;
 }
