@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!--Menu-->
+    <div id="menuSuperior">
+        <table>
+            <tr>
+                <th><a href="home.html">Home</a></th>
+                <th><a href="produtos.html">Produtos</a></th>
+                <th><a href="fale_conosco.html">Fale Conosco</a></th>
+                <th><a href="login.html">Entrar</a></th>
+            </tr>
+        </table>
+    </div>
+    <!---->
+
+    <!--Home-->
+    <div id="inicio">
+        <h1>Nome Empresa</h1>
+        <div>
+            <textarea id="barraPesquisa" cols="30" rows="1" placeholder="O que deseja buscar?"></textarea>
+        </div>
+    </div>
+
+    <div id="apresentacao">
+        <h2>Apresentação</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga exercitationem tempore a corrupti quod, recusandae ipsam temporibus voluptatibus voluptate culpa! Eum dolore placeat nihil numquam officiis doloribus? Quas, voluptatem.</p>
+    </div>
+
+    <div id="formulario">
+        <h2>Fale Conosco</h2>
+        <form action="">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            
+            <div>
+                <label for="sexo">Sexo:</label>
+                <select id="sexo">
+                    <option value="0" selected>Selecione seu sexo</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                    <option value="3">Prefiro não dizer</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <br>
+                <textarea id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <!---->
+</body>
+</html>
