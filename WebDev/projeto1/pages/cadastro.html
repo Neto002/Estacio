@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco</title>
+    <title>Cadastro</title>
 </head>
 <body>
     <div id="menuSuperior">
@@ -17,9 +17,8 @@
             </tr>
         </table>
     </div>
-    <h1>Fale Conosco</h1>
-    <br>
-    <div id="formulario">
+    <h1>Criar Conta</h1>
+    <div id="formCadastro">
         <form action="">
             <div>
                 <label for="nome">Nome:</label>
@@ -42,13 +41,17 @@
             </div>
 
             <div>
-                <label for="mensagem">Mensagem:</label>
-                <br>
-                <textarea id="mensagem" cols="30" rows="10"></textarea>
+                <label for="senha">Senha:</label>
+                <input type="text" id="senha" placeholder="Digite sua senha">
             </div>
 
             <div>
-                <input type="button" onclick="alert('Mensagem enviada com sucesso!')" value="Enviar">
+                <label for="senha2">Confirmar Senha:</label>
+                <input type="text" id="senha2" placeholder="Confirme sua senha">
+            </div>
+
+            <div>
+                <input type="button" onclick="alert('Cadastro efetuado com sucesso!')" value="Enviar">
             </div>
         </form>
     </div>
