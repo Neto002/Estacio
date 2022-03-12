@@ -635,7 +635,7 @@ void exercicioT() {
 void exercicioU() {
     printf("Faca um programa que leia uma matriz 4X4 e imprima a media aritmetica dos numeros das linhas e das colunas dessa matriz.\n");
 
-    int matriz[4][4], somaLinhas = 0, somaColunas = 0;
+    int matriz[4][4], somaLinha = 0, somaColuna = 0;
     int *mediaLinhas, *mediaColunas;
     mediaLinhas = (int*)malloc(sizeof(int)*4);
     mediaColunas = (int*)malloc(sizeof(int)*4);
@@ -649,14 +649,14 @@ void exercicioU() {
 
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            somaLinhas += matriz[i][j];
-            somaColunas += matriz[j][i];
+            somaLinha += matriz[i][j];
+            somaColuna += matriz[j][i];
         }
-        mediaLinhas[i] = (somaLinhas/4);
-        somaLinhas = 0;
+        mediaLinhas[i] = (somaLinha/4);
+        somaLinha = 0;
 
-        mediaColunas[i] = (somaColunas/4);
-        somaColunas = 0;
+        mediaColunas[i] = (somaColuna/4);
+        somaColuna = 0;
     }
 
     for (int i = 0; i < 4; i++) {
@@ -681,14 +681,76 @@ void exercicioU() {
 }
 
 void exercicioV() {
-    printf("Gerar e imprimir uma matriz de tamanho 4 x 14, onde seus elementos sao da forma:\n");
+    printf("\nGerar e imprimir uma matriz de tamanho 4 x 14, onde seus elementos sao da forma:\n");
     printf("a. A[i][j] = 2i + 7j - 2, se i < j\n");
     printf("b. A[i][j] = 3i2- 1, se i = j\n");
     printf("c. A[i][j] = 4i3- 5j² +1, se i > j.\n");
+
+
 }
 
 void exercicioW() {
     printf("Ler uma matriz de dimensoes especificadas pelo usuario e imprima a soma das linhas e colunas dessa matriz.\n");
+
+    int quantidadeLinhas, quantidadeColunas;
+    int somaLinha = 0;
+    int somaColuna = 0;
+
+    printf("Digite a quantidade de linhas da matriz: ");
+    scanf("%d", &quantidadeLinhas);
+
+    printf("Digite a quantidade de colunas da matriz: ");
+    scanf("%d", &quantidadeColunas);
+
+    int matriz[quantidadeLinhas][quantidadeColunas];
+    int vetorsomaLinha[quantidadeLinhas], vetorsomaColuna[quantidadeColunas];
+
+    for (int i = 0; i < quantidadeLinhas; i++) {
+        for (int j = 0; j < quantidadeColunas; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    for (int i = 0; i < quantidadeLinhas; i++) {
+        for (int j = 0; j < quantidadeColunas; j++) {
+            somaLinha += matriz[i][j];
+            somaColuna += matriz[j][i];
+        }
+        vetorsomaLinha[i] = (somaLinha/quantidadeLinhas);
+        somaLinha = 0;
+
+        vetorsomaColuna[i] = (somaColuna/quantidadeColunas);
+        somaColuna = 0;
+    }
+
+    for (int i = 0; i < quantidadeLinhas; i++) {
+        for (int j = 0; j < quantidadeColunas; j++) {
+            somaLinha += matriz[i][j];
+            somaColuna += matriz[j][i];
+        }
+    }
+
+    for (int i = 0; i < quantidadeLinhas; i++) {
+        for (int j = 0; j < quantidadeColunas; j++) {
+            if (matriz[i][j] >= 10) {
+                printf("%d ", matriz[i][j]);
+            } else {
+                printf("%d  ", matriz[i][j]);
+            }
+        }
+        printf("\n");
+    }
+    
+    printf("Linhas\n");
+    for (int i = 0; i < quantidadeLinhas; i++) {
+        printf("%d ", vetorsomaLinha[i]);
+    }
+
+    printf("\nColunas\n");
+    for (int i = 0; i < quantidadeColunas; i++) {
+        printf("%d ", vetorsomaColuna[i]);
+    }
 }
 
 int main()
@@ -713,8 +775,8 @@ int main()
     // exercicioR();
     // exercicioS();
     // exercicioT();
-    exercicioU();
-    // exercicioV();
+    // exercicioU();
+    exercicioV();
     // exercicioW();
 
     return 0;
