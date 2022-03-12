@@ -1,14 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao CSS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Introdução ao CSS</h1>
-    <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias tempore velit libero saepe commodi architecto soluta! Minus, natus necessitatibus enim, reiciendis vitae, eligendi magni dolorem molestiae beatae rem fuga.</p>
-</body>
+<html>
+	<head>
+	   <title> CSS </title>
+         <style>
+	      table {
+ 			font-family: arial, sans-serif;
+			border-collapse:collapse;
+			width:100%;
+		}
+		td, th{
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		tr:nth-child(even){
+			background-color: #dddddd;
+		}
+ 	    </style>
+      </head>
+	<body>
+	   	<table style="width:100%">
+			<caption> TABELA DE FORNECEDORES</caption>
+			<tr>
+				<th> Primeiro nome </th>
+				<th> Último nome </th>
+				<th> Telefone</th>
+			</tr>
+			<tr>
+				<td> Pedro </td>
+				<td> Silva </td>
+				<td> 21-996584547 </td>
+			</tr>
+			<tr>
+				<td> Marta </td>
+				<td> Costa </td>
+				<td> 11-981256569 </td>
+			</tr>
+			<tr>
+				<td> Ediberto </td>
+				<td> Souza </td>
+				<td> 21-95462658 </td>
+			</tr>
+		</table>
+	</body>
 </html>

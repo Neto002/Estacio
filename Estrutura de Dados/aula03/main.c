@@ -589,8 +589,8 @@ void exercicioS() {
         }
     }
 
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
             matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
             if (matrizC[i][j] >= 10) {
                 printf("%d ", matrizC[i][j]);
@@ -612,6 +612,25 @@ void exercicioT() {
             printf("Digite um valor para a linha %d coluna %d: ", i, j);
             scanf("%d", &matriz[i][j]);
         }
+    }
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            for (int aux = 0; aux < 3; aux++) {
+                matrizTransposta[i][aux] = matriz[aux][j];
+            }
+        }
+    }
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (matrizTransposta[i][j] >= 10) {
+                printf("%d ", matrizTransposta[i][j]);
+            } else {
+                printf("%d  ", matrizTransposta[i][j]);
+            }
+        }
+        printf("\n");
     }
 }
 
