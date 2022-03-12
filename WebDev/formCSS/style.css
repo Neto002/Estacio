@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+html {
+    font: 17px sans-serif;
+}
+
 form {
     margin: 0 auto;
     width: 400px;
