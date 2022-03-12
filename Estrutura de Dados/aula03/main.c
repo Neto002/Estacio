@@ -634,6 +634,50 @@ void exercicioT() {
 
 void exercicioU() {
     printf("Faca um programa que leia uma matriz 4X4 e imprima a media aritmetica dos numeros das linhas e das colunas dessa matriz.\n");
+
+    int matriz[4][4], somaLinhas = 0, somaColunas = 0;
+    int *mediaLinhas, *mediaColunas;
+    mediaLinhas = (int*)malloc(sizeof(int)*4);
+    mediaColunas = (int*)malloc(sizeof(int)*4);
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("Digite um valor para a linha %d coluna %d: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            somaLinhas += matriz[i][j];
+            somaColunas += matriz[j][i];
+        }
+        mediaLinhas[i] = (somaLinhas/4);
+        somaLinhas = 0;
+
+        mediaColunas[i] = (somaColunas/4);
+        somaColunas = 0;
+    }
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            if (matriz[i][j] >= 10) {
+                printf("%d ", matriz[i][j]);
+            } else {
+                printf("%d  ", matriz[i][j]);
+            }
+        }
+        printf("\n");
+    }
+    printf("Linhas\n");
+    for (int i = 0; i < 4; i++) {
+        printf("%d ", mediaLinhas[i]);
+    }
+
+    printf("\nColunas\n");
+    for (int i = 0; i < 4; i++) {
+        printf("%d ", mediaColunas[i]);
+    }
 }
 
 void exercicioV() {
@@ -668,8 +712,8 @@ int main()
     // exercicioQ();
     // exercicioR();
     // exercicioS();
-    exercicioT();
-    // exercicioU();
+    // exercicioT();
+    exercicioU();
     // exercicioV();
     // exercicioW();
 
