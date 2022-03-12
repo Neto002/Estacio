@@ -616,9 +616,7 @@ void exercicioT() {
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            for (int aux = 0; aux < 3; aux++) {
-                matrizTransposta[i][aux] = matriz[aux][j];
-            }
+            matrizTransposta[i][j] = matriz[j][i];
         }
     }
 
