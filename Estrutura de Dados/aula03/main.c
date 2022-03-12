@@ -684,9 +684,32 @@ void exercicioV() {
     printf("\nGerar e imprimir uma matriz de tamanho 4 x 14, onde seus elementos sao da forma:\n");
     printf("a. A[i][j] = 2i + 7j - 2, se i < j\n");
     printf("b. A[i][j] = 3i2- 1, se i = j\n");
-    printf("c. A[i][j] = 4i3- 5j² +1, se i > j.\n");
+    printf("c. A[i][j] = 4i3- 5j2 +1, se i > j.\n");
 
+    int matriz[4][14];
 
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 14; j++) {
+            if (i < j) {
+                matriz[i][j] = 2*i + 7*j - 2;
+            } else if (i == j) {
+                matriz[i][j] = 3 * (i*i) - 1;
+            } else {
+                matriz[i][j] = 4 * (i*i*i) - 5 * (j * j) + 1;
+            }
+        }
+    }
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 14; j++) {
+            if (matriz[i][j] >= 10) {
+                printf("%d ", matriz[i][j]);
+            } else {
+                printf("%d  ", matriz[i][j]);
+            }
+        }
+        printf("\n");
+    }
 }
 
 void exercicioW() {
