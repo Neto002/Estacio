@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
     <link rel="stylesheet" href="../styles/style_cor_fonte.css">
+    <link rel="stylesheet" href="../styles/style_form.css">
 </head>
 <body>
     <div id="menuSuperior">
@@ -20,7 +21,7 @@
     </div>
     <h1>Login</h1>
     <div id="formLogin">
-        <form action="">
+        <form action="../pages/home.html">
             <div>
                 <label for="email">Email:</label>
                 <input type="text" id="email" placeholder="Digite seu e-mail">
@@ -29,12 +30,13 @@
             <div>
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" placeholder="Digite sua senha">
-                <input type="checkbox" onclick="mostraSenha()">Mostrar Senha
+                <input type="checkbox" id="check" onclick="mostraSenha()">
+                <label for="check" id="checkLabel">Mostrar Senha</label>
                 <script src="../script/main.js"></script>
             </div>
 
             <div>
-                <input type="submit" value="Entrar">
+                <button type="submit">Entrar</button>
             </div>
 
             <div>
