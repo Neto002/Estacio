@@ -8,7 +8,7 @@ form {
     border-radius: 1em;
     text-align: center;
     font: 1em sans-serif;
-    box-shadow: none #000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 form div + div {
