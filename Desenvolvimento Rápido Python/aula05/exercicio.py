@@ -26,8 +26,8 @@ else:
 
 print("Faça um programa que leia um número de telefone, e corrija o número no caso deste conter somente 7 dígitos, acrescentando o '3' na frente. O usuário pode informar o número com ou sem o traço separador")
 
-telefone = input("Digite o telefone: ").strip()
+'''telefone = input("Digite o telefone: ").strip()
 # telefone = telefone.replace(telefone[telefone.find('-')], "")
 if (telefone.find("-") == -1 and len(telefone) == 7 or telefone.find("-") != 0 and len(telefone) == 8):
     telefone = '3' + telefone
-print(telefone)
+print(telefone)'''
