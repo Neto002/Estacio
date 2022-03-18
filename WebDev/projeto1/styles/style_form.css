@@ -1,42 +1,56 @@
 @charset "UTF-8";
 
-form {
-    margin: 0 auto;
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.formLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 400px;
-    padding: 1em;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 1em;
-    text-align: center;
-    font: 1em sans-serif;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-form div + div {
-    margin-top: 1em;
-}
-
-label {
-    display: inline-block;
-    text-align: right;
-}
-
-input, textarea {
-    width: 300px;
-    -moz-box-sizing: border-box;
+    padding: 40px;
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
-    border: 1px solid #999;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
 }
 
-input:focus, textarea:focus {
-    border-color: #000;
+.formLogin h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
 }
 
-textarea {
-    vertical-align: top;
-    height: 5em;
-    resize: none;
+.formLogin .user-box {
+    position: relative;
 }
 
-input#check {
-    width: 35px;
+.formLogin .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
 }
+
+.formLogin .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000090;
+    pointer-events: none;
+    transition: .5s;
+}
+
