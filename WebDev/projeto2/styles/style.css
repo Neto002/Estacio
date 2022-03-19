@@ -28,6 +28,8 @@ h2 {
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+    background-color: #640CE8;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 .menuSuperior {
@@ -39,6 +41,12 @@ h2 {
     color: #faf1ff;
     font-weight: 400;
     font-size: 18px;
+}
+
+.menuItem:hover {
+    background-color: #A200FF;
+    transition: .5s;
+    border-radius: 5px;
 }
 
 .conteudo {
@@ -62,7 +70,7 @@ h2 {
 .conteudoPrincipalTitulo {
     font-weight: 400;
     font-size: 40px;
-    color: #faf1ff;
+    color: #a200ff;
 }
 
 .apresentacaoParagrafo {
@@ -119,7 +127,7 @@ h2 {
     resize: none;
 }
 
-.formulario .formularioDados option {
+option, optgroup {
     color: black;
 }
 
@@ -245,4 +253,21 @@ h2 {
     50%, 100% {
         bottom: 100%;
     }
+}
+
+footer {
+    border-top: 1px solid white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.tituloFooter {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #a200ff;
 }
