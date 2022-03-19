@@ -54,12 +54,12 @@ h2 {
     border-top: 0.4px solid #faf1ff;
 }
 
-.conteudoPrincipal {
+/* .conteudoPrincipal {
     margin-top: 32px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+} */
 
 .conteudoPrincipalDiv {
     display: flex;
@@ -72,6 +72,7 @@ h2 {
     font-size: 40px;
     color: #a200ff;
     text-align: center;
+    margin: 32px;
 }
 
 .apresentacaoParagrafo {
