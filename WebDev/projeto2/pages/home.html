@@ -16,46 +16,52 @@
             <a class="menuItem" href="">Entrar</a>
         </nav>
     </header>
-    <div class="conteudoPrincipalDiv">
-        <a href="home.html" class="conteudoPrincipalTitulo">
+    <main class="conteudo">
+        <section class="conteudoPrincipal">
+            <div class="conteudoPrincipalDiv">
+                <h1 class="conteudoPrincipalTitulo">Nome Empresa</h1>
+                <p class="apresentacaoParagrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quos nesciunt quae rem dolor illum nihil? Sequi officia dignissimos, ducimus accusamus ipsum quod eos quisquam officiis. Cum doloremque dolor voluptates!</p>
+            </div>
+        </section>
+        <section class="secaoForm">
+            <div class="formularioDiv">
+                <form class="formulario">
+                    <h2>Fale Conosco</h2>
+                    <div class="formularioDados">
+                        <input type="text" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="formularioDados">
+                        <select>
+                            <option disabled selected>Selecione o sexo</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Prefiro não dizer</option>
+                        </select>
+                    </div>
+                    <div class="formularioDados">
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="formularioDados">
+                        <textarea cols="30" rows="3" required></textarea>
+                        <label>Mensagem</label>
+                    </div>
+                    <a href="#" onclick="alert('Mensagem enviada com sucesso')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        ENTRAR
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="home.html">
             <h1>Nome Empresa</h1>
         </a>
-    </div>
-    <div class="conteudoApresentacaoDiv">
-        <h2 class="apresentacao">Apresentação</h2>
-        <p class="apresentacaoParagrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quos nesciunt quae rem dolor illum nihil? Sequi officia dignissimos, ducimus accusamus ipsum quod eos quisquam officiis. Cum doloremque dolor voluptates!</p>
-    </div>
-    <div class="formulario">
-        <h2 class="faleConosco">Fale Conosco</h2>
-        <form>
-            <div class="formularioDados">
-                <input type="text" required>
-                <label>Nome</label>
-            </div>
-            <div class="formularioDados">
-                <select>
-                    <option disabled selected>Selecione o sexo</option>
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                    <option>Prefiro não dizer</option>
-                </select>
-            </div>
-            <div class="formularioDados">
-                <input type="email" required>
-                <label>E-mail</label>
-            </div>
-            <div class="formularioDados">
-                <textarea cols="30" rows="3" required></textarea>
-                <label>Mensagem</label>
-            </div>
-            <a href="#" onclick="alert('Mensagem enviada com sucesso')">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                ENTRAR
-            </a>
-        </form>
-    </div>
+    </footer>
 </body>
 </html>

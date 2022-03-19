@@ -18,6 +18,10 @@ body {
     background: linear-gradient(#1b1b1b, #434343);
 }
 
+h2 {
+    text-align: center;
+}
+    
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -37,17 +41,52 @@ body {
     font-size: 18px;
 }
 
-h2 {
-    text-align: center;
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #faf1ff;
+}
+
+.conteudoPrincipal {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conteudoPrincipalDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudoPrincipalTitulo {
+    font-weight: 400;
+    font-size: 40px;
+    color: #faf1ff;
+}
+
+.apresentacaoParagrafo {
+    font-weight: 400;
+    font-size: 20px;
+    color: #faf1ff;
+}
+
+.secaoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.formularioDiv {
+    border-top: 0.4px solid #faf1ff;
+    padding-top: 48px;
 }
 
 .formulario {
-    position: absolute;
-    top: 65%;
-    left: 50%;
     width: 400px;
     padding: 40px;
-    transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
@@ -104,7 +143,7 @@ h2 {
     font-size: 12px;
 }
 
-.formulario form a {
+.formulario a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
