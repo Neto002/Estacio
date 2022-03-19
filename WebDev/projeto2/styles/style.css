@@ -255,6 +255,10 @@ option, optgroup {
     }
 }
 
+#check {
+    position: absolute;
+}
+
 footer {
     border-top: 1px solid white;
 }
