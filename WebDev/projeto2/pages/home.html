@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menuSuperior">
+            <a class="menuItem" href="home.html">Página Inicial</a>
+            <a class="menuItem" href="">Produtos</a>
+            <a class="menuItem" href="">Fale Conosco</a>
+            <a class="menuItem" href="">Entrar</a>
+        </nav>
+    </header>
+    <div class="conteudoPrincipalDiv">
+        <h1 class="conteudoPrincipalTitulo">Nome Empresa</h1>
+    </div>
+    <div class="conteudoApresentacaoDiv">
+        <h2 class="apresentacao">Apresentação</h2>
+        <p class="apresentacaoParagrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quos nesciunt quae rem dolor illum nihil? Sequi officia dignissimos, ducimus accusamus ipsum quod eos quisquam officiis. Cum doloremque dolor voluptates!</p>
+    </div>
+    <div class="faleConoscoFormulario">
+        <h2 class="faleConosco">Fale Conosco</h2>
+        <form>
+            <div class="formularioDados">
+                <input type="text" required>
+                <label>Nome</label>
+            </div>
+            <div class="formularioDados">
+                <select>
+                    <option disabled selected>Selecione o sexo</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não dizer</option>
+                </select>
+            </div>
+            <div class="formularioDados">
+                <input type="email" required>
+                <label>E-mail</label>
+            </div>
+            <div class="formularioDados">
+                <textarea cols="30" rows="3" required></textarea>
+                <label>Mensagem</label>
+            </div>
+            <a href="#" onclick="alert('Mensagem enviada com sucesso')">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                ENTRAR
+            </a>
+        </form>
+    </div>
+</body>
+</html>
