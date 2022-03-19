@@ -16,7 +16,7 @@ h2 {
     text-align: center;
 }
 
-.faleConoscoFormulario {
+.formulario {
     position: absolute;
     top: 65%;
     left: 50%;
@@ -29,18 +29,18 @@ h2 {
     border-radius: 10px;
 }
 
-.faleConoscoFormulario h2 {
-    margin: 0 0 10px;
+.formulario h2 {
+    margin: 0 0 30px;
     padding: 0;
     color: white;
     text-align: center;
 }
 
-.faleConoscoFormulario .formularioDados {
+.formulario .formularioDados {
     position: relative;
 }
 
-.faleConoscoFormulario .formularioDados input, textarea, select{
+.formulario .formularioDados input, textarea, select{
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -52,15 +52,15 @@ h2 {
     background: transparent;
 }
 
-.faleConoscoFormulario .formularioDados textarea {
+.formulario .formularioDados textarea {
     resize: none;
 }
 
-.faleConoscoFormulario .formularioDados option {
+.formulario .formularioDados option {
     color: black;
 }
 
-.faleConoscoFormulario .formularioDados label {
+.formulario .formularioDados label {
     position: absolute;
     top: 0;
     left: 0;
@@ -71,16 +71,16 @@ h2 {
     transition: 0.5s;
 }
 
-.faleConoscoFormulario .formularioDados input:focus ~ label,
-.faleConoscoFormulario .formularioDados textarea:focus ~ label,
-.faleConoscoFormulario .formularioDados input:valid ~ label {
+.formulario .formularioDados input:focus ~ label,
+.formulario .formularioDados textarea:focus ~ label,
+.formulario .formularioDados input:valid ~ label {
     top: -20px;
     left: 0;
     color: #a200ff;
     font-size: 12px;
 }
 
-.faleConoscoFormulario form a {
+.formulario form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -94,7 +94,7 @@ h2 {
     letter-spacing: 4px;
 }
 
-.faleConoscoFormulario a:hover {
+.formulario a:hover {
     background: #a200ff;
     color: white;
     border-radius: 5px;
@@ -104,12 +104,12 @@ h2 {
                 0 0 100px #a200ff;
 }
 
-.faleConoscoFormulario a span {
+.formulario a span {
     position: absolute;
     display: block;
 }
 
-.faleConoscoFormulario a span:nth-child(1) {
+.formulario a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -123,11 +123,11 @@ h2 {
         left: -100%;
     }
     50%, 100% {
-        left: 100px;
+        left: 100%;
     }
 }
 
-.faleConoscoFormulario a span:nth-child(2) {
+.formulario a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -146,7 +146,7 @@ h2 {
     }
 }
 
-.faleConoscoFormulario a span:nth-child(3) {
+.formulario a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -165,7 +165,7 @@ h2 {
     }
 }
 
-.faleConoscoFormulario a span:nth-child(4) {
+.formulario a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
