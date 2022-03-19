@@ -71,12 +71,15 @@ h2 {
     font-weight: 400;
     font-size: 40px;
     color: #a200ff;
+    text-align: center;
 }
 
 .apresentacaoParagrafo {
     font-weight: 400;
     font-size: 20px;
     color: #faf1ff;
+    text-align: center;
+    justify-content: center;
 }
 
 .secaoForm {

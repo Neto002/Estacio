@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menuSuperior">
+            <a class="menuItem" href="home.html">Página Inicial</a>
+            <a class="menuItem" href="produtos.html">Produtos</a>
+            <a class="menuItem" href="fale-conosco.html">Fale Conosco</a>
+            <a class="menuItem" href="login.html">Entrar</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudoPrincipal">
+            <div class="conteudoPrincipalDiv">
+                <h1 class="conteudoPrincipalTitulo">Cadastro</h1>
+            </div>
+        </section>
+        <section class="secaoForm">
+            <div class="formularioDiv">
+                <form class="formulario">
+                    <div class="formularioDados">
+                        <input type="text" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="formularioDados">
+                        <select>
+                            <option disabled selected>Selecione o sexo</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Prefiro não dizer</option>
+                        </select>
+                    </div>
+                    <div class="formularioDados">
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="formularioDados">
+                        <input type="password" id="senha" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="formularioDados">
+                        <input type="password" id="confirmaSenha" required>
+                        <label for="">Confirmar Senha</label>
+                        <input type="checkbox" id="check" onclick="mostraSenha()">Mostrar Senha
+                    </div>
+                    <a href="#" onclick="alert('Mensagem enviada com sucesso')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Criar Conta
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="home.html">
+            <h1 class="tituloFooter">Nome Empresa</h1>
+        </a>
+    </footer>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
