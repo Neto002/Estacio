@@ -6,7 +6,7 @@ typedef struct {
 
 
 int main() {
-    
+    Lista lista;
 
     return 0;
 }
