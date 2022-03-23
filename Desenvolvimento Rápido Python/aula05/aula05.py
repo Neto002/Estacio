@@ -7,6 +7,12 @@ class Pessoa:
     def exibe_pessoa(self):
         print(f'Nome: {self.nome}\nIdade: {self.idade}\nPeso: {self.peso}')
 
+class Aluno(Pessoa):
+    pass
+
+class Professor(Pessoa):
+    pass
+
 class Calculadora:
     def __init__(self, a, b):
         self.a = a
