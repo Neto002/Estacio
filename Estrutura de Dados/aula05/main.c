@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 typedef struct {
     int conteudo;
@@ -24,12 +23,16 @@ void inserir(Item **item) {
         }
         itemNOVO = (Item *)malloc(sizeof(Item));
         itemNOVO->conteudo = numero;
+        itemNOVO->prox = NULL;
         itemATUAL->prox = itemNOVO;
     }
 }
 
 void imprimir(Item *item) {
-
+    while (item != NULL) {
+        printf("Item: %d ", item->conteudo);
+        item = item->prox;
+    }
 }
 
 int main() {
@@ -40,7 +43,7 @@ int main() {
         printf("\n--Opcoes--");
         printf("\n1 -> Inserir novo Item");
         printf("\n2 -> Imprimir os Itens");
-        printf("\n0 -> Sair");
+        printf("\n0 -> Sair\nSua escolha: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
