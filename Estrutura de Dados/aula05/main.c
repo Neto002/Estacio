@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 typedef struct {
-    
-} Lista;
-
+    char *nome;
+    int idade;
+    double salario;
+} Dados;
 
 int main() {
-    Lista lista;
+    Dados dados;
+    
 
     return 0;
 }
