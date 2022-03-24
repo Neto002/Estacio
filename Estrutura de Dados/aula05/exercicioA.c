@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 // a) Faca uma struct que armazene os dados de 10 pessoas, com os campos nome, idade, data de nascimento (dd/mm/yyyy). Data sera uma nova struct, ou seja, seu algoritmo struct.
-// b) Implementar o exemplo de structs com ponteiros da aula de hj, inserindo uma nova funcao, para imprimir a lista de forma inversa.
 
 typedef struct {
     char nome[30];
