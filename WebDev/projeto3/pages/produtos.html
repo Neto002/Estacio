@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menuSuperior">
+            <a class="menuItem" href="home.html">Página Inicial</a>
+            <a class="menuItem" href="produtos.html">Produtos</a>
+            <a class="menuItem" href="fale-conosco.html">Fale Conosco</a>
+            <a class="menuItem" href="login.html">Entrar</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudoPrincipal">
+            <div class="conteudoPrincipalDiv">
+                <h1 class="conteudoPrincipalTitulo">Produtos</h1>
+                <label for="processador">Processador</label>              
+            <select name="processador" id="processador"> 
+                <optgroup label="Intel"> 
+                    <option value="Celeron">Celeron</option> 
+                    <option value="Pentium"> Pentium</option> 
+                    <option value="Core i3">Core i3</option>
+                    <option value="Core i5">Core i5</option> 
+                    <option value="Core i7" selected>Core i7</option>
+                    <option value="Core i9">Core i9</option>   
+                </optgroup> 
+                <optgroup label="AMD">
+                    <option value="A6">A6</option> 
+                    <option value="Ryzen 3">Ryzen 3</option> 
+                    <option value="Ryzen 5">Ryzen 5</option>
+                    <option value="Ryzen 7">Ryzen 7</option>
+                    <option value="Ryzen 9">Ryzen 9</option>   
+                </optgroup> 
+            </select>
+            <h2> Memória RAM</h2>
+            <label for="memoria ram">Memória RAM</label>
+            <select name="memoria ram" id="memoria ram"> 
+                <optgroup label="Kingston Fury"> 
+                    <option value="DDR3">DDR 3</option> 
+                    <option value="DDR4" selected> DDR 4</option> 
+                    <option value="DDR5">DDR 5</option>
+                </optgroup> 
+                <optgroup label="Corsair">
+                    <option value="DDR3">DDR 3</option> 
+                    <option value="DDR4"> DDR 4</option> 
+                    <option value="DDR5">DDR 5</option>  
+                </optgroup>
+                <optgroup label="XPG">
+                    <option value="DDR3">DDR 3</option> 
+                    <option value="DDR4"> DDR 4</option> 
+                    <option value="DDR5">DDR 5</option>  
+                </optgroup>
+                <optgroup label="Crucial Ballistix">
+                    <option value="DDR3">DDR 3</option> 
+                    <option value="DDR4"> DDR 4</option> 
+                </optgroup>
+            </select>
+            <h2> Placa Mãe</h2>
+            <label for="placa mae">Placa Mãe</label>
+            <select name="placa mãe" id="placa mãe"> 
+                <optgroup label="Para AMD"> 
+                    <option value="AMD3">Soquete AM3</option> 
+                    <option value="AM3+" selected> Soquete AM3+</option> 
+                    <option value="AM4">Soquete AM4</option>
+                    <option value="AM4+">Soquete AM4+</option>
+                    <option value="FM1">Soquete FM1</option>
+                    <option value="FM2">Soquete FM2</option>
+                </optgroup> 
+                <optgroup label="Para Intel">
+                    <option value="LGA1150">Soquete LGA 1150</option> 
+                    <option value="LGA1150">Soquete LGA 1155</option> 
+                    <option value="LGA2011"> Soquete LGA 2011</option> 
+                    <option value="LGA1200" selected>Soquete LGA 1200</option>  
+                </optgroup>
+            </select>
+            <h2> Placa de Vídeo</h2>
+            <label for="placa de video">Placa de Vídeo</label>
+            <select name="placa de video" id="placa de video"> 
+                <optgroup label="Para AMD"> 
+                    <option value="5300M">Radeon Pro 5300M</option> 
+                    <option value="5500M" selected>Radeon Pro 5500M</option> 
+                    <option value="5600M">Radeon Pro 5600M</option>
+                </optgroup> 
+                <optgroup label="Para NVIDIA">
+                    <option value="RTX3050">GeForce RTX 3050</option> 
+                    <option value="RTX3050Ti">GeForce RTX 3050 Ti</option> 
+                    <option value="RTX3060">GeForce RTX 3060</option> 
+                    <option value="RTX3070" selected>GeForce RTX 3070</option>  
+                </optgroup>
+            </select>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="home.html">
+            <h1 class="tituloFooter">Nome Empresa</h1>
+        </a>
+    </footer>
+</body>
+</html>

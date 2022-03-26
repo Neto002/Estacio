@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 6</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
+    <h1>Aula 6 - JavaScript</h1>
+
+    <h2>Login</h2>
+
+    <div class="formDiv">
+        <form action="" id="loginForm">
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <input type="button" value="Entrar" onclick="validaLogin()">
+        </form>
+    </div>
     <script src="../scripts/main.js"></script>
 </body>
 </html>

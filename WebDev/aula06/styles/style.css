@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.formDiv {
+    display: flex;
+    align-items: center;
+}
+
+#loginForm {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(96, 190, 96);
+    padding: 10px 5px 10px 5px;
+    margin: 10px 0px 10px;
+    border: 1px solid #000;
+}
