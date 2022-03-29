@@ -4,7 +4,7 @@
 
 # Exemplo 1: Divisão por zero.
 
-while True:
+'''while True:
     try:
         numerador = int(input('Digite um numerador: '))
         denominador = int(input('Digite um denominador: '))
@@ -90,15 +90,20 @@ import math
 try:
     print(math.sqrt(-2))
 except ValueError:
-    print("Não existe raiz quadrada para o valor especificado.")
+    print("Não existe raiz quadrada para o valor especificado.")'''
 
 # Exemplo 11: Tentativa de abrir um arquivo para leitura.
 
-try:
-    print("Abrindo um arquivo!")
-    open("texto.txt", "r")
-except FileNotFoundError:
-    print("O arquivo especificado não existe.")
+def LerArquivo():
+    try:
+        print("Abrindo um arquivo!")
+        open("texto.txt", "r")
+    except FileNotFoundError:
+        print("O arquivo especificado não existe. Criando arquivo...")
+        with open("./Desenvolvimento Rápido Python/aula06/texto.txt", "w+") as file:
+            file.write("")
+
+LerArquivo()
 
 # Exemplo 2 de uso do try/except:
 
