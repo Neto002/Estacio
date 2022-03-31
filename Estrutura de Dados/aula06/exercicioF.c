@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// b) Implementar o exemplo de structs com ponteiros da aula de hj, inserindo uma nova funcao, para imprimir a lista de forma inversa.
-
 typedef struct {
     int conteudo;
     struct Item *prox;
