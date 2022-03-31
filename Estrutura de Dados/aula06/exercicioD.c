@@ -12,7 +12,7 @@ void checaPreco(Carro carro[], int x) {
 
     for (int i = 0; i < 5; i++) {
         if (carro[i].preco < x) {
-            printf("Dados do carro %d:\n Marca: %s\n Ano: %d\n Preco: R$%.2f\n", i, carro[i].marca, carro[i].ano, carro[i].preco);
+            printf("Dados do carro %d:\n Marca: %s\n Ano: %d\n Preco: R$%.2f\n", i+1, carro[i].marca, carro[i].ano, carro[i].preco);
         }
     }
 
