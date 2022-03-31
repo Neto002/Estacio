@@ -52,7 +52,6 @@ int main() {
         scanf("%d", &produto[i].codigo);
 
         printf("Digite o nome do produto: ");
-        // fgets(produto[i].nome, 15, stdin);
         scanf("%s", produto[i].nome);
 
         printf("Digite o preco do produto: ");
