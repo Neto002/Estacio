@@ -15,7 +15,6 @@ let botao = document.getElementById("botao")
 let paragrafo = document.getElementById("demo")
 
 botao.onclick = () => {
-    
     if (paragrafo.style.color == "blue") {
         paragrafo.style.color = "black"
         paragrafo.style.fontSize = "16px"
