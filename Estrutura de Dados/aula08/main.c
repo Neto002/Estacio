@@ -141,10 +141,10 @@ void exercicio5() {
 }
 
 int main() {
-    //exercicio1();
-    //exercicio2();
-    //exercicio3();
-    //exercicio4();
+    exercicio1();
+    exercicio2();
+    exercicio3();
+    exercicio4();
     exercicio5();
 
     return 0;
