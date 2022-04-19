@@ -2,15 +2,19 @@ import os
 
 # Tendo um arquivo de texto .txt, faça um script em Python que leia uma palavra e que verifique se esta palavra está no arquivo e quantas ocorrências dela tem no arquivo. Lembrando que a busca da palavra tem  de  ser  exata,  exemplo: se  a  busca  forpela  palavra “amor” e seu textotiver  a  palavra “amora”,  o programa irá contar, logo, isso deve ser evitado. (0,2pontos)
 
+busca_palavra = input('Digite a palavra a ser buscada: ')
+qtd_busca = 0
+
 try:
     with open(os.path.join(os.getcwd(), 'Desenvolvimento Rápido Python', 'aula08', 'exercicio.txt'), 'r+') as arquivo:
         texto_arquivo = arquivo.read().split()
-        busca_palavra = input('Digite a palavra a ser buscada: ')
-        qtd_busca = 0
+
         for palavra in texto_arquivo:
             if palavra == busca_palavra and len(palavra) == len(busca_palavra):
                 qtd_busca += 1
+
         print(f'A palavra amor apareceu {qtd_busca} vezes no arquivo.' if qtd_busca > 1 else f'A palavra amor apareceu {qtd_busca} vez no arquivo.' if qtd_busca == 1 else 'A palavra amor não apareceu no arquivo.')
+
 except FileNotFoundError:
     print('O arquivo não foi encontrado.')
 except Exception as erro:
@@ -18,7 +22,7 @@ except Exception as erro:
 
 # Faça um script que leia um email e verifique as seguintes condições: todas os caracteres em minúsculo e sem pontuações, somente letras e números antes do @. Emitir uma mensagem se é email válido. (0,2 pontos)
 
-'''try:
+try:
     email = input('Digite seu email: ').strip()
     if email == '':
         raise ValueError('E-mail inválido!')
@@ -80,4 +84,4 @@ try:
     print("A senha é: {}".format(dados['dia'] + "$" + dados['mes'][::-1] + "#" + dados['dia'] + "!" + dados['mes'][::-1] + "\\" + dados['ano']))
 
 except ValueError as e:
-    print(e)'''
+    print(e)
