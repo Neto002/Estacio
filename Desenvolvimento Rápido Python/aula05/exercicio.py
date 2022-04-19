@@ -28,8 +28,8 @@ print("Faça um programa que leia um número de telefone, e corrija o número no
 
 telefone = input("Digite o telefone: ").strip()
 # telefone = telefone.replace(telefone[telefone.find('-')], "")
-if (telefone.find("-") == -1 and len(telefone) == 7 or telefone.find("-") != 0 and len(telefone) == 8):
-    telefone = '3' + telefone
+if (len(telefone) == 7):
+    telefone = f'3{telefone}'
 print(telefone)
 
 print("Construa um programa que leia duas strings fornecidas em um arquivo txt e verifique se a segunda string lida está contida no início da primeira string, retornando o resultado da verificação.")
