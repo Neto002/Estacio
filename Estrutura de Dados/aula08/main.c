@@ -101,6 +101,16 @@ int criaRetangulo() {
     return area;
 }
 
+void comparaRetangulo(int retanguloA, int retanguloB) {
+    if (retanguloA > retanguloB) {
+        printf("Retangulo A e maior que o retangulo B\n");
+    } else if (retanguloA < retanguloB) {
+        printf("Retangulo B e maior que o retangulo A\n");
+    } else {
+        printf("Triangulos iguais\n");
+    }
+}
+
 void exercicio4() {
     int retanguloA = criaRetangulo();
     int retanguloB = criaRetangulo();
