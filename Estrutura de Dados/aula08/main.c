@@ -123,7 +123,7 @@ typedef struct {
     int matricula;
     char nome[30];
     float nota1;
-    float nota2;
+    float segundaNota;
 } Aluno;
 
 void exercicio5() {
@@ -138,8 +138,8 @@ void exercicio5() {
         printf("Digite a nota 1 do aluno %d: ", i+1);
         scanf("%f", &alunos[i].nota1);
         printf("Digite a nota 2 do aluno %d: ", i+1);
-        scanf("%f", &alunos[i].nota2);
-        media[i] = (alunos[i].nota1 + alunos[i].nota2) / 2;
+        scanf("%f", &alunos[i].segundaNota);
+        media[i] = (alunos[i].nota1 + alunos[i].segundaNota) / 2;
     }
 
     for (int i = 0; i < 6; i++) {
