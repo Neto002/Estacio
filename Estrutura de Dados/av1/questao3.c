@@ -13,6 +13,6 @@ void alocaNome(char *nome) {
 int main() {
     char *nome;
     alocaNome(&nome);
-
+    
     return 0;
 }
