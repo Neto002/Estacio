@@ -4,12 +4,12 @@ connection = sqlite3.connect('aula09.db')
 tabela = connection.cursor()
 
 tabela.execute("""CREATE TABLE dados (nome, rg, cpf, data_nasc);""")
-tabela.execute("""INSERT INTO dados VALUES ('João', '123456789', '123456789', '01/01/2000');""")
+#tabela.execute("""INSERT INTO dados VALUES ('João', '123456789', '123456789', '01/01/2000');""")
 
-#dados = [('João', '123456789', '123456789', '01/01/2000'), ('Maria', '123456789', '123456789', '01/01/2000')]
+dados = [('João', '123456789', '123456789', '01/01/2000'), ('Maria', '123456789', '123456789', '01/01/2000')]
 
 tabela.executemany("INSERT INTO dados VALUES (?, ?, ?, ?);", dados)
-connection.commit
+connection.commit()
 
 '''tabela.execute("DELETE FROM dados WHERE nome = 'João'")
 connection.commit()'''
