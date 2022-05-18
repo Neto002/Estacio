@@ -92,3 +92,19 @@ void buscar(no *pilha, int itemBusca) {
         }
     }
 }
+
+void esvaziar(no *pilha) {
+    if (vazia(pilha)) {
+        printf("A pilha ja esta vazia!\n\n");
+        return;
+    }
+
+    no *aux;
+    aux = pilha->prox;
+
+    while(aux != NULL) {
+        no *noRemove = aux;
+        aux = aux->prox;
+        free(noRemove);
+    }
+}

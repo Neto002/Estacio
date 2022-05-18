@@ -14,7 +14,7 @@ int main()
     
     while (escolha != 0) {
         printf("-----------------------------------------------------------\n");
-        printf("Digite a opcao desejada:\n1 - Inserir\n2 - Remover\n3 - Imprimir\n4 - Buscar valor\n0 - Sair\nSua escolha: ");
+        printf("Digite a opcao desejada:\n1 - Inserir\n2 - Remover\n3 - Imprimir\n4 - Buscar valor\n5 - Esvaziar pilha\n0 - Sair\nSua escolha: ");
         scanf("%d", &escolha);
         
         switch(escolha) {
@@ -38,6 +38,10 @@ int main()
                 scanf("%d", &valor);
                 buscar(pilha, valor);
                 valor = 0;
+                break;
+            case 5:
+                esvaziar(pilha);
+                printf("Pilha esvaziada\n");
                 break;
             default:
                 printf("Opcao invalida!\n\n");
