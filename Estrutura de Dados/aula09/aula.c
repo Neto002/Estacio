@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "operacoes.h"
+#include "operacoesPilha.h"
 
 int main()
 {
