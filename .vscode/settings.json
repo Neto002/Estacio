@@ -30,6 +30,7 @@
   "files.associations": {
     "stdlib.h": "c",
     "stdio.h": "c",
-    "operacoes.h": "c"
+    "operacoes.h": "c",
+    "operacoespilha.h": "c"
   }
 }

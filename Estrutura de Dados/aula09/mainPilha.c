@@ -6,11 +6,8 @@ int main()
 {
     int escolha;
     int valor = 0;
-    
-    no *pilha = (no*)malloc(sizeof(no));
-    pilha->prox = NULL;
-    
-    tamanho = 0;
+    no *pilha;
+    inicializar(pilha);
     
     while (escolha != 0) {
         printf("-----------------------------------------------------------\n");

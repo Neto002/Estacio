@@ -9,6 +9,12 @@ typedef struct No no;
 
 int tamanho;
 
+void inicializar(no *pilha) {
+    pilha = (no*)malloc(sizeof(no));
+    pilha->prox = NULL;
+    tamanho = 0;
+}
+
 int vazia(no *pilha) {
     if(pilha->prox == NULL) {
         return 1;
