@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fila[];
+int pilha[];
 int tamanho;
-int *fundo = &fila[0];
+int *fundo = &pilha[0];
 
 int vazia(int pilha[]) {
     if (pilha == NULL) {
@@ -13,7 +13,7 @@ int vazia(int pilha[]) {
     }
 }
 
-void enqueue(int pilha[], int valor) {
+void push(int pilha[], int valor) {
     if (pilha == NULL) {
         fundo = valor;
     } else {
@@ -26,7 +26,7 @@ void enqueue(int pilha[], int valor) {
     }
 }
 
-void dequeue(int pilha[]) {
+void pop(int pilha[]) {
     if (pilha == NULL) {
         printf("Pilha vazia\n");
     } else {
@@ -80,21 +80,21 @@ void menu() {
             case 1:
                 printf("Digite o valor a ser inserido: ");
                 scanf("%d", &valor);
-                enqueue(fila, valor);
+                push(pilha, valor);
                 break;
             case 2:
-                dequeue(fila);
+                pop(pilha);
                 break;
             case 3:
-                imprimir(fila);
+                imprimir(pilha);
                 break;
             case 4:
                 printf("Digite o valor que deseja buscar: ");
                 scanf("%d", &valor);
-                buscar(fila, valor);
+                buscar(pilha, valor);
                 break;
             case 5:
-                esvaziar(fila);
+                esvaziar(pilha);
                 printf("Pilha esvaziada\n");
                 break;
             default:
@@ -108,10 +108,10 @@ int main () {
     printf("Tamanho desejado da pilha: ");
     scanf("%d", &tamanho);
 
-    fila[tamanho];
+    pilha[tamanho];
     
     for (int i = 0; i < tamanho; i++) {
-        fila[i] = NULL;
+        pilha[i] = NULL;
     }
     
     menu();

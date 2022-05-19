@@ -1,124 +1,70 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fila[];
-int tamanho;
-int *inicio;
-int *final;
+#define TAMANHO 5
 
-int vazia(int fila[]) {
-    if (fila == NULL) {
-        return 1;
+typedef struct Fila {
+    int itens[TAMANHO];
+    int final;
+} Fila;
+
+void inicializar(Fila *fila) {
+    for (int i = 0; i < TAMANHO; i++) {
+        fila->itens[i] = 0;
+    }
+    fila->final = 0;
+}
+
+void enqueue(Fila *fila, int valor) {
+    if (fila->final == TAMANHO) {
+        printf("Fila cheia!\n\n");
+        return;
     } else {
-        return 0;
+        fila->itens[fila->final] = valor;
+        fila->final++;
     }
 }
 
-void enqueue(int fila[], int valor) {
-    if (fila == NULL) {
-        inicio = valor;
+void dequeue(Fila *fila) {
+    if (fila->final == 0) {
+        printf("Fila vazia!\n\n");
+        return;
     } else {
-        for (int i = 0; i < tamanho; i++) {
-            if (fila[i] == NULL) {
-                fila[i] = valor;
-                break;
-            }
+        for (int i = 0; i < TAMANHO; i++) {
+            fila->itens[i] = fila->itens[i+1];
+            fila->final--;
         }
     }
 }
 
-void dequeue(int fila[]) {
-    if (fila == NULL) {
-        printf("Fila vazia\n");
-    } else {
-        for (int i = 0; i < tamanho; i++) {
-            *inicio = NULL;
-            inicio = fila[i+1];
-            break;
-        }
+void imprimir(Fila *fila) {
+    printf("\nFila:\n");
+    for (int i = 0; i < TAMANHO; i++) {
+        printf("%3d", fila->itens[i]);
     }
+    printf("\n\n");
 }
 
-void imprimir(int fila[]) {
-    for (int i = 0; i < tamanho; i++) {
-        if (fila[i] != NULL) {
-            printf("%3d", fila[i]);
-        }
-    }
-    printf("\nTamanho da fila: %d\n", tamanho);
+void buscar(Fila *fila, int valor) {
+
 }
 
-void buscar(int fila[], int valor) {
-    for (int i = 0; i < tamanho; i++) {
-        if (fila[i] == valor) {
-            printf("%d encontrado\n", valor);
-            break;
-        } else if (fila[i] != valor && i == 4) {
-            printf("%d nao encontrado\n", valor);
-        }
-    }
+void maiorValor(Fila *fila) {
+
 }
 
-void esvaziar(int fila[]) {
-    for (int i = 0; i < tamanho; i++) {
-        fila[i] = NULL;
-    }
+void esvaziar(Fila *fila) {
+
 }
 
-void menu() {
-    int escolha;
-    int valor = 0;
-    while (escolha != 0) {
-        printf("-----------------------------------------------------------\n");
-        printf("Digite a opcao desejada:\n1 - Inserir\n2 - Remover\n3 - Imprimir\n4 - Buscar valor\n5 - Esvaziar fila\n0 - Sair\nSua escolha: ");
-        scanf("%d", &escolha);
-        
-        switch(escolha) {
-            case 0:
-                printf("Encerrando...\n");
-                break;
-            case 1:
-                printf("Digite o valor a ser inserido: ");
-                scanf("%d", &valor);
-                enqueue(fila, valor);
-                break;
-            case 2:
-                dequeue(fila);
-                break;
-            case 3:
-                imprimir(fila);
-                break;
-            case 4:
-                printf("Digite o valor que deseja buscar: ");
-                scanf("%d", &valor);
-                buscar(fila, valor);
-                break;
-            case 5:
-                esvaziar(fila);
-                printf("Fila esvaziada\n");
-                break;
-            default:
-                printf("Opcao invalida!\n\n");
-        }
-    }
-}
-
-int main () {
-
-
-    printf("Tamanho desejado da fila: ");
-    scanf("%d", &tamanho);
-    
-
-    fila[tamanho];
-    inicio = &fila[0];
-    final = &fila[tamanho-1];
-    
-    for (int i = 0; i < tamanho; i++) {
-        fila[i] = NULL;
-    }
-
-    menu();
+int main() {
+    Fila *fila;
+    enqueue(&fila, 1);
+    enqueue(&fila, 2);
+    enqueue(&fila, 3);
+    enqueue(&fila, 4);
+    enqueue(&fila, 5);
+    imprimir(&fila);
 
     return 0;
 }
