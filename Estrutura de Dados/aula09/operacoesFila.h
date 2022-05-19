@@ -10,7 +10,7 @@ typedef struct No no;
 int tamanho;
 
 void inicializar(no *fila) {
-    fila = (no*)malloc(sizeof(no*));
+    fila = (no*)malloc(sizeof(no));
     fila->prox = NULL;
     tamanho = 0;
 }
@@ -24,7 +24,7 @@ int vazia(no *fila) {
 }
 
 void enqueue(no *fila, int item) {
-    no *novo = (no*)malloc(sizeof(no*));
+    no *novo = (no*)malloc(sizeof(no));
     novo->prox = NULL;
 
     novo->item = item;
@@ -70,18 +70,32 @@ void imprimir(no *fila) {
 }
 
 void buscar(no *fila, int item) {
-
-}
-
-no* maiorValor(no *fila) {
-    no *maior = fila;;
     if (vazia(fila)) {
         printf("Fila vazia!\n\n");
         return;
     } else {
         no *temp;
         temp = fila->prox;
-        printf("\nFila:");
+        while(temp != NULL) {
+            if (temp->item == item) {
+                printf("\nO numero %d existe na fila\n", item);
+                return;
+            }
+            temp = temp->prox;
+        }
+        printf("\nO numero %d nao existe na fila\n", item);
+    }
+}
+
+no* maiorValor(no *fila) {
+    no *maior = fila->prox;
+
+    if (vazia(fila)) {
+        printf("Fila vazia!\n\n");
+        return;
+    } else {
+        no *temp;
+        temp = fila->prox;
         while(temp != NULL) {
             if (temp->item > maior->item) {
                 maior = temp;
@@ -89,5 +103,22 @@ no* maiorValor(no *fila) {
             temp = temp->prox;
         }
     }
-    return maior;
+    return maior->item;
+}
+
+void esvaziar(no *fila) {
+    if (vazia(fila)) {
+        printf("A fila ja esta vazia!\n\n");
+        return;
+    } else {
+        no *atual;
+        no *proxNo;
+        atual = fila->prox;
+
+        while(atual != NULL) {
+            proxNo = atual->prox;
+            free(atual);
+            atual = proxNo;
+        }
+    }
 }

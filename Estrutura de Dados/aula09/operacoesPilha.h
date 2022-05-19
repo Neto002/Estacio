@@ -85,18 +85,14 @@ void buscar(no *pilha, int itemBusca) {
     temp = pilha->prox;
     
     while(temp != NULL) {
-        
-        if (temp->prox == NULL) {
-            printf("\nO numero %d nao existe na pilha\n", itemBusca);
-        }
-        
+            
         if (temp->item == itemBusca) {
             printf("\nO numero %d existe na pilha\n", itemBusca);
-            break;
-        } else {
-            temp = temp->prox;
+            return;
         }
+        temp = temp->prox;
     }
+    printf("\nO numero %d nao existe na pilha\n", itemBusca);
 }
 
 void esvaziar(no *pilha) {
