@@ -15,9 +15,12 @@ html {
 
 body {
     font-family: sans-serif;
-    background: linear-gradient(#1b1b1b, #434343);
+    /*background: linear-gradient(#1b1b1b, #434343);*/
     background-image: url(http://www.burgguers.com.br/wp-content/uploads/revslider/landing/home-1-slide-background.jpg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+
 }
 
 h2 {
