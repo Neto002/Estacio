@@ -320,39 +320,3 @@ footer a {
     height: 200px;
     border-radius: 10px;
 }
-
-/* .div_processador{
-    margin-top: 20px;
-    margin-left: 25px;
-    display: inline-block;
-    width: 205px;
-    padding: 2px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.6);
-    box-sizing: border-box;
-    border-radius: 10px;
-} */
-
-/* .img_processador {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-} */
-
-/* .div_memoria{
-    margin-top: 20px;
-    margin-left: 25px;
-    display: inline-block;
-    width: 205px;
-    padding: 2px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 15px 25px #ffffff;
-    box-sizing: border-box;
-    border-radius: 10px;
-} */
-
-/* .img_memoria {
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-} */
