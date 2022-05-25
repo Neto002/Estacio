@@ -40,6 +40,8 @@ class PrincipalBD:
     
     def cadastrar(self):
         try:
+            if self.txtCodigo.get() == "":
+                raise Exception("Código não informado!")
             codigo, nome, preco = self.lerCampos()
             record = self.objBD.inserirDados(codigo, nome, preco)
             self.limpar()
@@ -62,7 +64,7 @@ class PrincipalBD:
     def excluir(self):
         try:
             if self.txtCodigo.get() == "":
-                raise Exception("Código do produto não informado")
+                raise Exception("Código não informado")
             if self.txtNome.get() == "":
                 self.txtNome.insert(0, "Não informado")
             if self.txtPreco.get() == "":
@@ -96,7 +98,7 @@ def main():
     janela = tk.Tk()
     principal = PrincipalBD(janela)
     janela.title("Cadastro de Produtos")
-    janela.geometry("600x500")
+    janela.geometry("600x400")
     janela.mainloop()
 
 if __name__ == "__main__":

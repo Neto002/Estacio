@@ -14,7 +14,7 @@ class AppBD:
     
     def abrirConexao(self):
         try:
-            self.connection = psycopg2.connect(database="postgres", user="postgres", password="postgres", host="127.0.0.1", port="5432")
+            self.connection = psycopg2.connect(database="projeto_crud_produtos_db", user="postgres", password="postgres", host="127.0.0.1", port="5432")
         except (Exception, psycopg2.Error) as error:
             if (self.connection):
                 print(f"Falha ao se conectar ao Banco de Dados: {error}")
