@@ -1,6 +1,5 @@
-import appbd
+import appbd as appbd
 import tkinter as tk
-from tkinter import ttk
 
 class PrincipalBD:
     def __init__(self, win):
@@ -38,23 +37,22 @@ class PrincipalBD:
     
     def defineMensagemOperacao(self, msgOperacao):
         self.lblMensagemOperacao.configure(text=msgOperacao)
-        #self.lblMensagemOperacao["text"] = msgOperacao
     
     def cadastrar(self):
         try:
             codigo, nome, preco = self.lerCampos()
-            self.objBD.inserirDados(codigo, nome, preco)
+            record = self.objBD.inserirDados(codigo, nome, preco)
             self.limpar()
-            self.defineMensagemOperacao("Cadastro realizado com sucesso!")
-        except:
-            self.defineMensagemOperacao("Falha ao cadastrar!")
+            self.defineMensagemOperacao(f"Cadastro realizado com sucesso! {record}")
+        except Exception as error:
+            self.defineMensagemOperacao(f"Falha ao cadastrar: {error}")
 
     def atualizar(self):
         try:
             codigo, nome, preco = self.lerCampos()
-            self.obj.atualizarDados(codigo, nome, preco)
+            record = self.objBD.atualizarDados(codigo, nome, preco)
             self.limpar()
-            self.defineMensagemOperacao("Produto atualizado com sucesso!")
+            self.defineMensagemOperacao(f"Produto atualizado com sucesso! {record}")
         except Exception as error:
             self.defineMensagemOperacao(f"Falha ao atualizar: {error}")
 
@@ -64,26 +62,24 @@ class PrincipalBD:
             self.objBD.excluirDados(codigo)
             self.limpar()
             self.defineMensagemOperacao("Produto excluído com sucesso!")
-        except:
-            self.defineMensagemOperacao("Falha ao excluir!")
+        except Exception as error:
+            self.defineMensagemOperacao(f"Falha ao excluir: {error}")
 
     def limpar(self):
         try:
             self.txtCodigo.delete(0, tk.END)
             self.txtNome.delete(0, tk.END)
             self.txtPreco.delete(0, tk.END)
-            self.defineMensagemOperacao("Campos Limpos!")
         except Exception as error:
             self.defineMensagemOperacao(f"Falha ao limpar: {error}")
     
     def lerCampos(self):
         try:
             codigo = int(self.txtCodigo.get())
-            nome = self.txtNome.get()
+            nome = (self.txtNome.get()).strip().capitalize()
             preco = float(self.txtPreco.get())
-            self.defineMensagemOperacao("Leitura dos dados com sucesso!")
-        except:
-            self.defineMensagemOperacao("Não foi possível ler os dados!")
+        except Exception as error:
+            self.defineMensagemOperacao(f"Não foi possível ler os dados: {error}")
         return codigo, nome, preco
 
 def main():
