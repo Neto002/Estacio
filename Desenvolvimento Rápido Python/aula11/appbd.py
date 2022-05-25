@@ -10,6 +10,7 @@ POSTGRES_DELETE_QUERY = """DELETE FROM public.produto WHERE codigo = %s"""
 class AppBD:
     def __init__(self):
         self.criarTabela()
+        
     
     def abrirConexao(self):
         try:
@@ -40,15 +41,22 @@ class AppBD:
             self.abrirConexao()
             cursor = self.connection.cursor()
             record_to_insert = (codigo, nome, preco)
+            cursor.execute(POSTGRES_SELECT_QUERY, (codigo,))
+            if cursor.fetchone():
+                raise ValueError("Código já existe!")
+            if (nome == "" or preco == ""):
+                raise ValueError("Nome ou preço não informado!")
             cursor.execute(POSTGRES_INSERT_QUERY, record_to_insert)
             self.connection.commit()
             count = cursor.rowcount
             print(count, "registro inserido com sucesso")
             cursor.execute(POSTGRES_SELECT_QUERY, (codigo,))
             return cursor.fetchone()
+        except ValueError as error:
+            raise
         except (Exception, psycopg2.Error) as error:
             if (self.connection):
-                print("Falha ao inserir dados no Banco de Dados: ", error)
+                raise error
         finally:
             if (self.connection):
                 cursor.close()

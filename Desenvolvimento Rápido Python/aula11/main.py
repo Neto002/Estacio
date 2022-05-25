@@ -47,8 +47,11 @@ class PrincipalBD:
         except Exception as error:
             self.defineMensagemOperacao(f"Falha ao cadastrar: {error}")
 
+
     def atualizar(self):
         try:
+            if self.txtCodigo.get() == "":
+                raise Exception("Código não informado!")
             codigo, nome, preco = self.lerCampos()
             record = self.objBD.atualizarDados(codigo, nome, preco)
             self.limpar()
@@ -58,6 +61,12 @@ class PrincipalBD:
 
     def excluir(self):
         try:
+            if self.txtCodigo.get() == "":
+                raise Exception("Código do produto não informado")
+            if self.txtNome.get() == "":
+                self.txtNome.insert(0, "Não informado")
+            if self.txtPreco.get() == "":
+                self.txtPreco.insert(0, 0)
             codigo, nome, preco = self.lerCampos()
             self.objBD.excluirDados(codigo)
             self.limpar()
@@ -70,6 +79,7 @@ class PrincipalBD:
             self.txtCodigo.delete(0, tk.END)
             self.txtNome.delete(0, tk.END)
             self.txtPreco.delete(0, tk.END)
+            self.lblMensagemOperacao["text"] = ""
         except Exception as error:
             self.defineMensagemOperacao(f"Falha ao limpar: {error}")
     
