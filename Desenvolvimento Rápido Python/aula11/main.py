@@ -36,23 +36,62 @@ class PrincipalBD:
 
         self.lblMensagemOperacao.place(x=100, y=250)
     
-    def limpaMensagemOperacao(self, msgOperacao):
-        self.lblMensagemOperacao["text"] = ""
+    def defineMensagemOperacao(self, msgOperacao):
+        self.lblMensagemOperacao.configure(text=msgOperacao)
+        #self.lblMensagemOperacao["text"] = msgOperacao
     
     def cadastrar(self):
-        pass
+        try:
+            codigo, nome, preco = self.lerCampos()
+            self.objBD.inserirDados(codigo, nome, preco)
+            self.limpar()
+            self.defineMensagemOperacao("Cadastro realizado com sucesso!")
+        except:
+            self.defineMensagemOperacao("Falha ao cadastrar!")
 
     def atualizar(self):
-        pass
+        try:
+            codigo, nome, preco = self.lerCampos()
+            self.obj.atualizarDados(codigo, nome, preco)
+            self.limpar()
+            self.defineMensagemOperacao("Produto atualizado com sucesso!")
+        except Exception as error:
+            self.defineMensagemOperacao(f"Falha ao atualizar: {error}")
 
     def excluir(self):
-        pass
+        try:
+            codigo, nome, preco = self.lerCampos()
+            self.objBD.excluirDados(codigo)
+            self.limpar()
+            self.defineMensagemOperacao("Produto excluído com sucesso!")
+        except:
+            self.defineMensagemOperacao("Falha ao excluir!")
 
     def limpar(self):
-        pass
+        try:
+            self.txtCodigo.delete(0, tk.END)
+            self.txtNome.delete(0, tk.END)
+            self.txtPreco.delete(0, tk.END)
+            self.defineMensagemOperacao("Campos Limpos!")
+        except Exception as error:
+            self.defineMensagemOperacao(f"Falha ao limpar: {error}")
+    
+    def lerCampos(self):
+        try:
+            codigo = int(self.txtCodigo.get())
+            nome = self.txtNome.get()
+            preco = float(self.txtPreco.get())
+            self.defineMensagemOperacao("Leitura dos dados com sucesso!")
+        except:
+            self.defineMensagemOperacao("Não foi possível ler os dados!")
+        return codigo, nome, preco
 
-janela = tk.Tk()
-principal = PrincipalBD(janela)
-janela.title("Cadastro de Produtos")
-janela.geometry("600x500")
-janela.mainloop()
+def main():
+    janela = tk.Tk()
+    principal = PrincipalBD(janela)
+    janela.title("Cadastro de Produtos")
+    janela.geometry("600x500")
+    janela.mainloop()
+
+if __name__ == "__main__":
+    main()
