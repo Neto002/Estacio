@@ -10,7 +10,6 @@ POSTGRES_DELETE_QUERY = """DELETE FROM public.produto WHERE codigo = %s"""
 class AppBD:
     def __init__(self):
         self.criarTabela()
-        
     
     def abrirConexao(self):
         try:
