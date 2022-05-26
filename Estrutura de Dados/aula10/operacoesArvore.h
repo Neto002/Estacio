@@ -27,13 +27,29 @@ No* inserir(No *raiz, int valor) {
     }
 }
 
+void imprimirInOrdem(No *raiz) {
+    if (raiz != NULL) {
+        imprimirInOrdem(raiz->esquerda);
+        printf("%d ", raiz->item);
+        imprimirInOrdem(raiz->direita);
+    }
+}
+
+void imprimirPreOrdem(No *raiz) {
+    if (raiz != NULL) {
+        imprimirPreOrdem(raiz->direita);
+        printf("%d ", raiz->item);
+        imprimirPreOrdem(raiz->esquerda);
+    }
+}
+
 // 1 para valor existente e 0 para valor inexistente na Árvore
-void buscar(No *raiz, int item) {
+int buscar(No *raiz, int item) {
     if (raiz == NULL) {
-        printf("%d nao encontrado", item);
+        return 0;
     } else {
         if (raiz->item == item) {
-            printf("%d encontrado!", item);
+            return 1;
         } else {
             if (item < raiz->item) {
                 buscar(raiz->esquerda, item);
@@ -82,21 +98,5 @@ No* remover(No *raiz, int item) {
             }
             return raiz;
         }
-    }
-}
-
-void imprimirInOrdem(No *raiz) {
-    if (raiz != NULL) {
-        imprimirInOrdem(raiz->esquerda);
-        printf("%d ", raiz->item);
-        imprimirInOrdem(raiz->direita);
-    }
-}
-
-void imprimirPreOrdem(No *raiz) {
-    if (raiz != NULL) {
-        imprimirPreOrdem(raiz->direita);
-        printf("%d ", raiz->item);
-        imprimirPreOrdem(raiz->esquerda);
     }
 }
