@@ -31,6 +31,7 @@
     "stdlib.h": "c",
     "stdio.h": "c",
     "operacoes.h": "c",
-    "operacoespilha.h": "c"
+    "operacoespilha.h": "c",
+    "*.tcc": "c"
   }
 }
