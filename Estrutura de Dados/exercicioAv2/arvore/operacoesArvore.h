@@ -62,6 +62,24 @@ int buscar(No *raiz, int item) {
     }
 }
 
+No* maiorValor(No *raiz) {
+    int maior = 0;
+    if (raiz == NULL) {
+        return 0;
+    } else {
+        if (raiz->item > maior && raiz->direita == NULL && raiz->esquerda == NULL) {
+            maior = raiz->item;
+            return maior;
+        } else {
+            if (raiz->direita != NULL) {
+                maior = maiorValor(raiz->direita);
+            } else {
+                maior = maiorValor(raiz->esquerda);
+            }
+        }
+    }
+}
+
 No* remover(No *raiz, int item) {
     if (raiz == NULL) {
         printf("Valor nao encontrado!");
