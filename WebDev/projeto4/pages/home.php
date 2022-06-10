@@ -22,7 +22,8 @@ if(!isset($_SESSION)) {
         </nav>
     </header>
     <main class="conteudo">
-        <h2>Bem vindo ao XPTO Componentes de Informática, <span style="color: #5A189A;"><?php echo $_SESSION['nome'];?></span>.</h2>
+        <br>
+        <h2>Bem vindo ao XPTO Componentes de Informática, <span style="color: yellow;"><?php echo $_SESSION['nome'];?></span>.</h2>
         <section class="conteudoPrincipal">
             <div class="conteudoPrincipalDiv">
                 <h1 class="conteudoPrincipalTitulo">XPTO Componentes de Informática</h1>
